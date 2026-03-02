@@ -290,6 +290,19 @@ img { max-width: 100%; }
 .bar-fill { height: 100%; border-radius: 6px; }
 .bar-value { width: 55px; font-size: 13px; font-weight: 700; font-family: var(--font-mono); }
 
+/* Revenue Highlight */
+.revenue-highlight {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 24px;
+}
+.revenue-card {
+  background: white; border: 1px solid var(--border); border-radius: 12px;
+  padding: 20px; text-align: center; position: relative; overflow: hidden;
+}
+.revenue-card .top-bar { position: absolute; top: 0; left: 0; right: 0; height: 3px; }
+.revenue-label { font-size: 11px; color: var(--text-dim); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+.revenue-value { font-size: 28px; font-weight: 800; margin-bottom: 4px; }
+.revenue-sub { font-size: 11px; color: var(--text-dim); }
+
 /* ===== Career Timeline ===== */
 .timeline { position: relative; max-width: 780px; margin: 0 auto; }
 .timeline::before {
@@ -390,6 +403,7 @@ img { max-width: 100%; }
   .skills-grid { grid-template-columns: 1fr; }
   .impact-grid { grid-template-columns: repeat(2, 1fr); }
   .hero h1 { font-size: 36px; }
+  .revenue-highlight { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 768px) {
   .nav-links {
@@ -412,6 +426,8 @@ img { max-width: 100%; }
   .timeline-dot { left: 7px; }
   .education-card { flex-direction: column; text-align: center; }
   .bar-label { width: 70px; font-size: 11px; }
+  .revenue-highlight { grid-template-columns: 1fr; }
+  .revenue-value { font-size: 22px; }
 }
 @media (max-width: 480px) {
   .impact-grid { grid-template-columns: 1fr 1fr; gap: 16px; }

@@ -241,6 +241,32 @@ img { max-width: 100%; }
 .repo-card[data-accent="cyan"] .repo-pillar { background: #0891b2; }
 .repo-card[data-accent="amber"] .repo-pillar { background: var(--amber); }
 
+/* Repo narrative strip */
+.repo-narrative {
+  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 1px solid var(--border);
+}
+.narrative-cell {
+  padding: 16px 20px; border-right: 1px solid var(--border);
+}
+.narrative-cell:last-child { border-right: none; }
+.narrative-cell h5 {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1px; margin-bottom: 6px;
+  display: flex; align-items: center; gap: 5px;
+}
+.narrative-cell h5 .n-dot {
+  width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
+}
+.narrative-cell.problem h5 { color: var(--red); }
+.narrative-cell.problem .n-dot { background: var(--red); }
+.narrative-cell.strategy h5 { color: var(--brand); }
+.narrative-cell.strategy .n-dot { background: var(--brand); }
+.narrative-cell.results h5 { color: var(--green); }
+.narrative-cell.results .n-dot { background: var(--green); }
+.narrative-cell p { font-size: 12px; color: var(--text-secondary); line-height: 1.55; }
+.narrative-cell p strong { color: var(--text); font-weight: 700; }
+
 /* Repo body */
 .repo-body { padding: 24px 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 
@@ -414,6 +440,9 @@ img { max-width: 100%; }
 
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
+  .repo-narrative { grid-template-columns: 1fr; }
+  .narrative-cell { border-right: none; border-bottom: 1px solid var(--border); }
+  .narrative-cell:last-child { border-bottom: none; }
   .repo-body { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
   .impact-grid { grid-template-columns: repeat(2, 1fr); }

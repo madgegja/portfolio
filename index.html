@@ -116,10 +116,13 @@
 
     <div class="projects-grid">
 
-      <!-- Project 1: AI Agent -->
+      <!-- ==================== Project 1: AI Agent ==================== -->
       <div class="project-card reveal" data-color="purple">
         <div class="project-card-header">
-          <div class="card-icon">&#129302;</div>
+          <div class="card-top-row">
+            <div class="card-icon">&#129302;</div>
+            <span class="contribution-badge full"><span class="i18n" data-en="Contribution 100%" data-kr="기여도 100%">Contribution 100%</span></span>
+          </div>
           <h3>
             <span class="i18n"
               data-en="AI Agent — BizOps PM Assistant"
@@ -127,32 +130,51 @@
           </h3>
           <p class="card-subtitle">
             <span class="i18n"
-              data-en="Multi-agent orchestration system with 12-year PM persona. Automates CS analysis, chargeback disputes, fraud detection, and report generation across 10 global markets."
-              data-kr="12년차 PM 페르소나 멀티 에이전트 오케스트레이션 시스템. CS 분석, 차지백 소명, Fraud 탐지, 보고서 자동 생성을 10개 글로벌 마켓에 걸쳐 자동화합니다.">Multi-agent orchestration system with 12-year PM persona. Automates CS analysis, chargeback disputes, fraud detection, and report generation across 10 global markets.</span>
+              data-en="Multi-agent orchestration system built on Claude Code. 1 Opus main agent + 7 specialized Sonnet sub-agents automate CS analysis, chargeback disputes, fraud detection, and report generation across 10 global markets — operating with a 12-year PM/PO persona."
+              data-kr="Claude Code 기반 멀티 에이전트 오케스트레이션 시스템. Opus 메인 에이전트 1개 + Sonnet 서브 에이전트 7개가 10개 글로벌 마켓의 CS 분석, 차지백 소명, Fraud 탐지, 보고서 생성을 12년차 PM/PO 페르소나로 자동화합니다.">Multi-agent orchestration system built on Claude Code. 1 Opus main agent + 7 specialized Sonnet sub-agents automate CS analysis, chargeback disputes, fraud detection, and report generation across 10 global markets — operating with a 12-year PM/PO persona.</span>
           </p>
         </div>
         <div class="project-card-body">
-          <div class="project-metrics">
-            <div class="metric">
-              <div class="val">1+7</div>
-              <div class="key"><span class="i18n" data-en="Agents" data-kr="에이전트">Agents</span></div>
+          <div class="project-narrative">
+            <div class="narrative-block">
+              <h4><span class="n-icon challenge">!</span> <span class="i18n" data-en="CHALLENGE" data-kr="문제 정의">CHALLENGE</span></h4>
+              <p><span class="i18n"
+                data-en="Managing CS, chargeback, and fraud operations across 10 global markets required analyzing thousands of tickets manually each month. Each market had different languages, payment gateways, and operational patterns. Weekly/monthly reports consumed 2+ days of manual work, and inconsistent analysis quality led to missed patterns and delayed responses to emerging issues."
+                data-kr="10개 글로벌 마켓의 CS, 차지백, Fraud 운영 관리에는 매달 수천 건의 티켓을 수동 분석해야 했습니다. 각 마켓마다 언어, 결제사, 운영 패턴이 달랐고, 주간/월간 보고서 작성에 2일 이상 소요되었습니다. 분석 품질의 비일관성으로 신규 이슈 패턴 누락과 대응 지연이 반복되었습니다.">Managing CS, chargeback, and fraud operations across 10 global markets required analyzing thousands of tickets manually each month. Each market had different languages, payment gateways, and operational patterns. Weekly/monthly reports consumed 2+ days of manual work, and inconsistent analysis quality led to missed patterns and delayed responses to emerging issues.</span></p>
             </div>
-            <div class="metric">
-              <div class="val">82%</div>
-              <div class="key"><span class="i18n" data-en="Noise Filtered" data-kr="노이즈 제거">Noise Filtered</span></div>
+            <div class="narrative-block">
+              <h4><span class="n-icon strategy">&#9654;</span> <span class="i18n" data-en="STRATEGY" data-kr="해결 전략">STRATEGY</span></h4>
+              <p><span class="i18n"
+                data-en="Designed a multi-agent architecture — 1 Opus orchestrator for decision-making + 7 Sonnet sub-agents for parallel task execution (cs-analyzer, weekly-collector, ip-scanner, ip-reporter, pg-analyzer, code-explorer, bizops-reviewer). Built a 9-stage data filtering pipeline to systematically remove noise. Automated the full reporting cycle (daily/weekly/monthly) with direct deployment to Confluence and GitHub Pages."
+                data-kr="멀티 에이전트 아키텍처 설계 — 의사결정용 Opus 오케스트레이터 1개 + 병렬 작업용 Sonnet 서브 에이전트 7개 (cs-analyzer, weekly-collector, ip-scanner, ip-reporter, pg-analyzer, code-explorer, bizops-reviewer). 9단계 데이터 필터링 파이프라인으로 체계적 노이즈 제거. 전체 보고 주기(일간/주간/월간)를 Confluence와 GitHub Pages 직접 배포로 자동화했습니다.">Designed a multi-agent architecture — 1 Opus orchestrator for decision-making + 7 Sonnet sub-agents for parallel task execution (cs-analyzer, weekly-collector, ip-scanner, ip-reporter, pg-analyzer, code-explorer, bizops-reviewer). Built a 9-stage data filtering pipeline to systematically remove noise. Automated the full reporting cycle (daily/weekly/monthly) with direct deployment to Confluence and GitHub Pages.</span></p>
             </div>
-            <div class="metric">
-              <div class="val">29</div>
-              <div class="key"><span class="i18n" data-en="Docs Generated" data-kr="문서 생성">Docs Generated</span></div>
+            <div class="narrative-block">
+              <h4><span class="n-icon results">&#10003;</span> <span class="i18n" data-en="RESULTS" data-kr="성과">RESULTS</span></h4>
+              <ul>
+                <li><span class="i18n" data-en="13,405+ tickets analyzed across 10 months, 11 languages" data-kr="10개월간 13,405건+ 티켓 분석, 11개 언어">13,405+ tickets analyzed across 10 months, 11 languages</span></li>
+                <li><span class="i18n" data-en="82% noise reduction through 9-stage filtering pipeline" data-kr="9단계 필터링으로 82% 노이즈 제거">82% noise reduction through 9-stage filtering pipeline</span></li>
+                <li><span class="i18n" data-en="Report generation: 2+ days → under 1 hour" data-kr="보고서 생성: 2일+ → 1시간 이내">Report generation: 2+ days → under 1 hour</span></li>
+                <li><span class="i18n" data-en="29 operational documents auto-generated and published" data-kr="29건 운영 문서 자동 생성 및 배포">29 operational documents auto-generated and published</span></li>
+                <li><span class="i18n" data-en="Chargeback evidence auto-generated for 8 payment gateways" data-kr="8개 결제사 차지백 증빙 자동 생성">Chargeback evidence auto-generated for 8 payment gateways</span></li>
+              </ul>
             </div>
           </div>
-          <div class="tech-tags">
-            <span class="tech-tag">Claude Code</span>
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">pandas</span>
-            <span class="tech-tag">Confluence API</span>
-            <span class="tech-tag">Google Sheets API</span>
-            <span class="tech-tag">Zendesk API</span>
+          <div class="project-bottom-row">
+            <div class="project-bottom-left">
+              <div class="project-metrics">
+                <div class="metric"><div class="val">1+7</div><div class="key"><span class="i18n" data-en="Agents" data-kr="에이전트">Agents</span></div></div>
+                <div class="metric"><div class="val">82%</div><div class="key"><span class="i18n" data-en="Noise Filtered" data-kr="노이즈 제거">Noise Filtered</span></div></div>
+                <div class="metric"><div class="val">29</div><div class="key"><span class="i18n" data-en="Docs Generated" data-kr="문서 생성">Docs Generated</span></div></div>
+              </div>
+              <div class="tech-tags">
+                <span class="tech-tag">Claude Code</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">pandas</span>
+                <span class="tech-tag">Confluence API</span>
+                <span class="tech-tag">Google Sheets API</span>
+                <span class="tech-tag">Zendesk API</span>
+              </div>
+            </div>
           </div>
           <div class="project-links">
             <a href="https://github.com/madgegja/toomics-ai-agent" target="_blank" rel="noopener" class="project-link">
@@ -163,10 +185,13 @@
         </div>
       </div>
 
-      <!-- Project 2: CS Chatbot -->
+      <!-- ==================== Project 2: CS Chatbot ==================== -->
       <div class="project-card reveal" data-color="green">
         <div class="project-card-header">
-          <div class="card-icon">&#128172;</div>
+          <div class="card-top-row">
+            <div class="card-icon">&#128172;</div>
+            <span class="contribution-badge full"><span class="i18n" data-en="Contribution 100%" data-kr="기여도 100%">Contribution 100%</span></span>
+          </div>
           <h3>
             <span class="i18n"
               data-en="CS AI Chatbot"
@@ -174,32 +199,51 @@
           </h3>
           <p class="card-subtitle">
             <span class="i18n"
-              data-en="Claude API + FastAPI + RAG-based CS chatbot. Targets 38% self-service automation with fraud detection, smart escalation, and multilingual support across 10 markets."
-              data-kr="Claude API + FastAPI + RAG 기반 CS 챗봇. 38% 셀프서비스 자동화 목표, Fraud 탐지, 스마트 에스컬레이션, 10개 마켓 다국어 지원.">Claude API + FastAPI + RAG-based CS chatbot. Targets 38% self-service automation with fraud detection, smart escalation, and multilingual support across 10 markets.</span>
+              data-en="Claude API + FastAPI + RAG-based intelligent CS chatbot. Hybrid 90/10 response model (90% vetted templates + 10% AI glue) with fraud detection, 3-tier smart escalation, and multilingual support across 10 markets and 10 languages."
+              data-kr="Claude API + FastAPI + RAG 기반 인텔리전트 CS 챗봇. 90/10 하이브리드 응답 모델(90% 검증 템플릿 + 10% AI 접착제), Fraud 탐지, 3단계 스마트 에스컬레이션, 10개 마켓 · 10개 언어 지원.">Claude API + FastAPI + RAG-based intelligent CS chatbot. Hybrid 90/10 response model (90% vetted templates + 10% AI glue) with fraud detection, 3-tier smart escalation, and multilingual support across 10 markets and 10 languages.</span>
           </p>
         </div>
         <div class="project-card-body">
-          <div class="project-metrics">
-            <div class="metric">
-              <div class="val">38%</div>
-              <div class="key"><span class="i18n" data-en="Auto-resolve" data-kr="자동 처리">Auto-resolve</span></div>
+          <div class="project-narrative">
+            <div class="narrative-block">
+              <h4><span class="n-icon challenge">!</span> <span class="i18n" data-en="CHALLENGE" data-kr="문제 정의">CHALLENGE</span></h4>
+              <p><span class="i18n"
+                data-en="~1,650 CS tickets/month across 10 markets, with 38% being repetitive self-serviceable queries (password resets, subscription cancellations, payment inquiries). Agents spent most of their time on routine responses instead of complex cases. No fraud detection existed at the CS entry point — malicious refund patterns were only caught after costly escalation. Third-party cancellation services (Minna/Ethoca) were generating unactionable tickets."
+                data-kr="10개 마켓에서 월 ~1,650건의 CS 티켓이 발생하며, 38%가 반복적 셀프서비스 가능 문의(비밀번호 재설정, 구독 해지, 결제 문의)였습니다. 상담원들은 복잡한 케이스 대신 일상적 응대에 대부분의 시간을 소비했습니다. CS 진입점에서 Fraud 탐지가 없어 악의적 환불 패턴은 비용이 드는 에스컬레이션 후에야 발견되었습니다. 제3자 해지 서비스(Minna/Ethoca)가 조치 불가능한 티켓을 생성하고 있었습니다.">~1,650 CS tickets/month across 10 markets, with 38% being repetitive self-serviceable queries (password resets, subscription cancellations, payment inquiries). Agents spent most of their time on routine responses instead of complex cases. No fraud detection existed at the CS entry point — malicious refund patterns were only caught after costly escalation. Third-party cancellation services (Minna/Ethoca) were generating unactionable tickets.</span></p>
             </div>
-            <div class="metric">
-              <div class="val">161</div>
-              <div class="key"><span class="i18n" data-en="Test Cases" data-kr="테스트">Test Cases</span></div>
+            <div class="narrative-block">
+              <h4><span class="n-icon strategy">&#9654;</span> <span class="i18n" data-en="STRATEGY" data-kr="해결 전략">STRATEGY</span></h4>
+              <p><span class="i18n"
+                data-en="Built a hybrid AI chatbot with a 90/10 response model — 90% manual-vetted templates for accuracy + 10% AI natural language for conversational flow. Designed a multi-stage pipeline: Step 0.5 (third-party block) → Language Detection → Fraud Scoring (9 Red Flags, 0~100) → Intent Classification (7 categories × 32 sub-intents) → 3-tier Routing (L1 immediate escalation / L2 AI draft + agent review / L3 full self-service). Response quality scoring (0.0~1.0) ensures output reliability."
+                data-kr="90/10 응답 모델의 하이브리드 AI 챗봇을 설계했습니다 — 정확도를 위한 90% 검증 템플릿 + 대화 흐름을 위한 10% AI 자연어. 다단계 파이프라인: Step 0.5(제3자 차단) → 언어 감지 → Fraud 스코어링(9개 Red Flag, 0~100) → 의도 분류(7 카테고리 × 32 서브인텐트) → 3단계 라우팅(L1 즉시 에스컬레이션 / L2 AI 초안+상담원 검토 / L3 완전 셀프서비스). 응답 품질 스코어링(0.0~1.0)으로 출력 신뢰성을 보장합니다.">Built a hybrid AI chatbot with a 90/10 response model — 90% manual-vetted templates for accuracy + 10% AI natural language for conversational flow. Designed a multi-stage pipeline: Step 0.5 (third-party block) → Language Detection → Fraud Scoring (9 Red Flags, 0~100) → Intent Classification (7 categories × 32 sub-intents) → 3-tier Routing (L1 immediate escalation / L2 AI draft + agent review / L3 full self-service). Response quality scoring (0.0~1.0) ensures output reliability.</span></p>
             </div>
-            <div class="metric">
-              <div class="val">10</div>
-              <div class="key"><span class="i18n" data-en="Languages" data-kr="언어">Languages</span></div>
+            <div class="narrative-block">
+              <h4><span class="n-icon results">&#10003;</span> <span class="i18n" data-en="RESULTS" data-kr="성과">RESULTS</span></h4>
+              <ul>
+                <li><span class="i18n" data-en="38% self-service target (~630 tickets/month automated)" data-kr="38% 셀프서비스 목표 (월 ~630건 자동화)">38% self-service target (~630 tickets/month automated)</span></li>
+                <li><span class="i18n" data-en="161 test cases across 5 test files — unit + integration" data-kr="5개 테스트 파일에 161개 테스트 — 단위+통합">161 test cases across 5 test files — unit + integration</span></li>
+                <li><span class="i18n" data-en="30 multilingual templates (3 categories × 10 markets)" data-kr="30개 다국어 템플릿 (3 카테고리 × 10 마켓)">30 multilingual templates (3 categories × 10 markets)</span></li>
+                <li><span class="i18n" data-en="9-indicator fraud scoring with boundary hardening (49/50 clamp)" data-kr="9개 지표 Fraud 스코어링, 경계값 강화 (49/50 클램핑)">9-indicator fraud scoring with boundary hardening (49/50 clamp)</span></li>
+                <li><span class="i18n" data-en="CI/CD pipeline: test coverage → Docker push (GHCR) → staging deploy" data-kr="CI/CD 파이프라인: 테스트 커버리지 → Docker push (GHCR) → 스테이징 배포">CI/CD pipeline: test coverage → Docker push (GHCR) → staging deploy</span></li>
+              </ul>
             </div>
           </div>
-          <div class="tech-tags">
-            <span class="tech-tag">FastAPI</span>
-            <span class="tech-tag">Claude API</span>
-            <span class="tech-tag">ChromaDB</span>
-            <span class="tech-tag">Docker</span>
-            <span class="tech-tag">GitHub Actions</span>
-            <span class="tech-tag">Pydantic v2</span>
+          <div class="project-bottom-row">
+            <div class="project-bottom-left">
+              <div class="project-metrics">
+                <div class="metric"><div class="val">38%</div><div class="key"><span class="i18n" data-en="Auto-resolve" data-kr="자동 처리">Auto-resolve</span></div></div>
+                <div class="metric"><div class="val">161</div><div class="key"><span class="i18n" data-en="Test Cases" data-kr="테스트">Test Cases</span></div></div>
+                <div class="metric"><div class="val">10</div><div class="key"><span class="i18n" data-en="Languages" data-kr="언어">Languages</span></div></div>
+              </div>
+              <div class="tech-tags">
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Claude API</span>
+                <span class="tech-tag">ChromaDB</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">GitHub Actions</span>
+                <span class="tech-tag">Pydantic v2</span>
+              </div>
+            </div>
           </div>
           <div class="project-links">
             <a href="https://github.com/madgegja/Ai-Chat-bot-project" target="_blank" rel="noopener" class="project-link">
@@ -210,42 +254,63 @@
         </div>
       </div>
 
-      <!-- Project 3: CS Analysis -->
+      <!-- ==================== Project 3: CS Analysis ==================== -->
       <div class="project-card reveal" data-color="blue">
         <div class="project-card-header">
-          <div class="card-icon">&#128202;</div>
+          <div class="card-top-row">
+            <div class="card-icon">&#128202;</div>
+            <span class="contribution-badge full"><span class="i18n" data-en="Contribution 100%" data-kr="기여도 100%">Contribution 100%</span></span>
+          </div>
           <h3>
             <span class="i18n"
-              data-en="CS Analysis & Reporting"
-              data-kr="CS 분석 & 리포팅">CS Analysis & Reporting</span>
+              data-en="CS Analysis & Reporting System"
+              data-kr="CS 분석 & 리포팅 시스템">CS Analysis & Reporting System</span>
           </h3>
           <p class="card-subtitle">
             <span class="i18n"
-              data-en="Automated CS data analysis pipeline. 3-stage filtering, 4-level category classification, weekly/monthly reports with charts, and multilingual VOC analysis."
-              data-kr="CS 데이터 분석 자동화 파이프라인. 3단계 필터링, 4단계 카테고리 분류, 주간/월간 리포트 + 차트, 다국어 VOC 분석.">Automated CS data analysis pipeline. 3-stage filtering, 4-level category classification, weekly/monthly reports with charts, and multilingual VOC analysis.</span>
+              data-en="End-to-end CS data analysis pipeline — from raw Zendesk exports to structured weekly/monthly reports with charts. Standardized category taxonomy across 10 global markets with multilingual VOC analysis."
+              data-kr="엔드투엔드 CS 데이터 분석 파이프라인 — Zendesk 원본 추출부터 차트 포함 주간/월간 보고서까지. 10개 글로벌 마켓 표준 카테고리 체계 수립 및 다국어 VOC 분석.">End-to-end CS data analysis pipeline — from raw Zendesk exports to structured weekly/monthly reports with charts. Standardized category taxonomy across 10 global markets with multilingual VOC analysis.</span>
           </p>
         </div>
         <div class="project-card-body">
-          <div class="project-metrics">
-            <div class="metric">
-              <div class="val">12.9K</div>
-              <div class="key"><span class="i18n" data-en="Raw Tickets" data-kr="원본 티켓">Raw Tickets</span></div>
+          <div class="project-narrative">
+            <div class="narrative-block">
+              <h4><span class="n-icon challenge">!</span> <span class="i18n" data-en="CHALLENGE" data-kr="문제 정의">CHALLENGE</span></h4>
+              <p><span class="i18n"
+                data-en="Raw Zendesk export data contained massive noise — auto-responses, spam, merged tickets, system messages made up ~75% of records. No standardized category taxonomy existed across markets, making cross-market comparison impossible. Manual Excel-based reporting was error-prone, slow, and couldn't scale across 10 markets and 11 languages."
+                data-kr="Zendesk 원본 추출 데이터에 자동응답, 스팸, 병합 티켓, 시스템 메시지 등 ~75%의 노이즈가 포함되어 있었습니다. 마켓 간 표준화된 카테고리 분류 체계가 없어 크로스마켓 비교가 불가능했습니다. Excel 기반 수동 보고서는 오류 발생 가능성이 높고, 느리며, 10개 마켓 · 11개 언어 환경에서 확장이 불가능했습니다.">Raw Zendesk export data contained massive noise — auto-responses, spam, merged tickets, system messages made up ~75% of records. No standardized category taxonomy existed across markets, making cross-market comparison impossible. Manual Excel-based reporting was error-prone, slow, and couldn't scale across 10 markets and 11 languages.</span></p>
             </div>
-            <div class="metric">
-              <div class="val">3.2K</div>
-              <div class="key"><span class="i18n" data-en="Cleaned" data-kr="정제 건수">Cleaned</span></div>
+            <div class="narrative-block">
+              <h4><span class="n-icon strategy">&#9654;</span> <span class="i18n" data-en="STRATEGY" data-kr="해결 전략">STRATEGY</span></h4>
+              <p><span class="i18n"
+                data-en="Built a Python pipeline with 3-stage filtering (auto-response / spam / merge removal) → 4-level priority category classification engine → automated report generation with Chart.js visualizations. Defined a unified category taxonomy applicable across all 10 markets. Implemented solved_at (KST) date normalization and Saturday–Friday weekly cycles to align with operational reality."
+                data-kr="3단계 필터링(자동응답/스팸/병합 제거) → 4단계 우선순위 카테고리 분류 엔진 → Chart.js 시각화 포함 보고서 자동 생성의 Python 파이프라인을 구축했습니다. 10개 마켓 전체에 적용 가능한 통합 카테고리 체계를 정의했습니다. solved_at(KST) 날짜 정규화와 토~금 주간 사이클로 운영 현실에 맞춰 정렬했습니다.">Built a Python pipeline with 3-stage filtering (auto-response / spam / merge removal) → 4-level priority category classification engine → automated report generation with Chart.js visualizations. Defined a unified category taxonomy applicable across all 10 markets. Implemented solved_at (KST) date normalization and Saturday–Friday weekly cycles to align with operational reality.</span></p>
             </div>
-            <div class="metric">
-              <div class="val">4</div>
-              <div class="key"><span class="i18n" data-en="Report Types" data-kr="리포트 유형">Report Types</span></div>
+            <div class="narrative-block">
+              <h4><span class="n-icon results">&#10003;</span> <span class="i18n" data-en="RESULTS" data-kr="성과">RESULTS</span></h4>
+              <ul>
+                <li><span class="i18n" data-en="12,920 raw → 3,227 cleaned tickets (75% noise reduction)" data-kr="12,920건 원본 → 3,227건 정제 (75% 노이즈 제거)">12,920 raw → 3,227 cleaned tickets (75% noise reduction)</span></li>
+                <li><span class="i18n" data-en="4 report types auto-generated (weekly detail + executive + monthly + VOC)" data-kr="4종 보고서 자동 생성 (주간 상세+요약+월간+VOC)">4 report types auto-generated (weekly detail + executive + monthly + VOC)</span></li>
+                <li><span class="i18n" data-en="Unified category taxonomy adopted across all 10 markets" data-kr="10개 마켓 전체에 통합 카테고리 체계 채택">Unified category taxonomy adopted across all 10 markets</span></li>
+                <li><span class="i18n" data-en="Cross-market comparison enabled for the first time" data-kr="최초로 크로스마켓 비교 분석 가능">Cross-market comparison enabled for the first time</span></li>
+              </ul>
             </div>
           </div>
-          <div class="tech-tags">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">pandas</span>
-            <span class="tech-tag">Matplotlib</span>
-            <span class="tech-tag">Zendesk API</span>
-            <span class="tech-tag">Excel</span>
+          <div class="project-bottom-row">
+            <div class="project-bottom-left">
+              <div class="project-metrics">
+                <div class="metric"><div class="val">12.9K</div><div class="key"><span class="i18n" data-en="Raw Tickets" data-kr="원본 티켓">Raw Tickets</span></div></div>
+                <div class="metric"><div class="val">3.2K</div><div class="key"><span class="i18n" data-en="Cleaned" data-kr="정제 건수">Cleaned</span></div></div>
+                <div class="metric"><div class="val">4</div><div class="key"><span class="i18n" data-en="Report Types" data-kr="리포트 유형">Report Types</span></div></div>
+              </div>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">pandas</span>
+                <span class="tech-tag">Matplotlib</span>
+                <span class="tech-tag">Zendesk API</span>
+                <span class="tech-tag">Excel</span>
+              </div>
+            </div>
           </div>
           <div class="project-links">
             <a href="https://github.com/madgegja/bizops-CS-Study" target="_blank" rel="noopener" class="project-link">
@@ -256,10 +321,13 @@
         </div>
       </div>
 
-      <!-- Project 4: BizOps Portal -->
+      <!-- ==================== Project 4: BizOps Portal ==================== -->
       <div class="project-card reveal" data-color="cyan">
         <div class="project-card-header">
-          <div class="card-icon">&#128193;</div>
+          <div class="card-top-row">
+            <div class="card-icon">&#128193;</div>
+            <span class="contribution-badge full"><span class="i18n" data-en="Contribution 100%" data-kr="기여도 100%">Contribution 100%</span></span>
+          </div>
           <h3>
             <span class="i18n"
               data-en="BizOps Artifacts Portal"
@@ -267,30 +335,48 @@
           </h3>
           <p class="card-subtitle">
             <span class="i18n"
-              data-en="Public documentation portal hosting 29+ operational artifacts — CS manuals (EN/KO), chargeback templates, AI chatbot planning docs, analysis reports, and weekly report archives."
-              data-kr="29건+ 운영 산출물 공개 포탈 — CS 매뉴얼(EN/KO), 차지백 템플릿, AI 챗봇 기획 문서, 분석 리포트, 주간 보고서 아카이브.">Public documentation portal hosting 29+ operational artifacts — CS manuals (EN/KO), chargeback templates, AI chatbot planning docs, analysis reports, and weekly report archives.</span>
+              data-en="Centralized public documentation portal hosting 29+ operational artifacts — CS manuals (EN/KO), chargeback dispute templates, AI chatbot planning suite (13 docs), analysis reports, and weekly report archives. Single source of truth for team operations."
+              data-kr="29건+ 운영 산출물 중앙화 공개 포탈 — CS 매뉴얼(EN/KO), 차지백 소명 템플릿, AI 챗봇 기획 풀세트(13건), 분석 리포트, 주간 보고서 아카이브. 팀 운영의 단일 진실 원천(SSOT).">Centralized public documentation portal hosting 29+ operational artifacts — CS manuals (EN/KO), chargeback dispute templates, AI chatbot planning suite (13 docs), analysis reports, and weekly report archives. Single source of truth for team operations.</span>
           </p>
         </div>
         <div class="project-card-body">
-          <div class="project-metrics">
-            <div class="metric">
-              <div class="val">29+</div>
-              <div class="key"><span class="i18n" data-en="Documents" data-kr="문서">Documents</span></div>
+          <div class="project-narrative">
+            <div class="narrative-block">
+              <h4><span class="n-icon challenge">!</span> <span class="i18n" data-en="CHALLENGE" data-kr="문제 정의">CHALLENGE</span></h4>
+              <p><span class="i18n"
+                data-en="29+ operational documents (CS manuals, chargeback guides, chatbot specs, analysis reports) were scattered across Confluence, Google Drive, and local files. No single source of truth for operational reference existed. New team members had no centralized onboarding resource, and finding the latest version of any document required asking multiple people."
+                data-kr="29건 이상의 운영 문서(CS 매뉴얼, 차지백 가이드, 챗봇 기획서, 분석 리포트)가 Confluence, 구글 드라이브, 로컬 파일에 분산되어 있었습니다. 운영 참조를 위한 단일 진실 원천(SSOT)이 없었고, 신규 팀원을 위한 중앙화된 온보딩 리소스가 없었습니다. 최신 버전 문서를 찾으려면 여러 사람에게 물어봐야 했습니다.">29+ operational documents (CS manuals, chargeback guides, chatbot specs, analysis reports) were scattered across Confluence, Google Drive, and local files. No single source of truth for operational reference existed. New team members had no centralized onboarding resource, and finding the latest version of any document required asking multiple people.</span></p>
             </div>
-            <div class="metric">
-              <div class="val">7</div>
-              <div class="key"><span class="i18n" data-en="Categories" data-kr="카테고리">Categories</span></div>
+            <div class="narrative-block">
+              <h4><span class="n-icon strategy">&#9654;</span> <span class="i18n" data-en="STRATEGY" data-kr="해결 전략">STRATEGY</span></h4>
+              <p><span class="i18n"
+                data-en="Built a static documentation portal on GitHub Pages with categorized navigation (7 categories), accordion-based UI, and stat-card overview. All 29+ documents authored solo — leveraging Claude AI for content generation while applying domain expertise for accuracy. Automated deployment via GitHub Actions (push to main triggers sync). Designed print-optimized layouts for PDF conversion."
+                data-kr="GitHub Pages에 카테고리별 내비게이션(7개 카테고리), 아코디언 UI, 스탯카드 개요를 갖춘 정적 문서 포탈을 구축했습니다. 29건+ 문서를 단독 기획·작성 — Claude AI를 활용하되 도메인 전문성으로 정확성을 확보했습니다. GitHub Actions를 통한 자동 배포(main 푸시 시 자동 동기화). PDF 변환을 위한 인쇄 최적화 레이아웃을 설계했습니다.">Built a static documentation portal on GitHub Pages with categorized navigation (7 categories), accordion-based UI, and stat-card overview. All 29+ documents authored solo — leveraging Claude AI for content generation while applying domain expertise for accuracy. Automated deployment via GitHub Actions (push to main triggers sync). Designed print-optimized layouts for PDF conversion.</span></p>
             </div>
-            <div class="metric">
-              <div class="val">2</div>
-              <div class="key"><span class="i18n" data-en="Languages" data-kr="언어">Languages</span></div>
+            <div class="narrative-block">
+              <h4><span class="n-icon results">&#10003;</span> <span class="i18n" data-en="RESULTS" data-kr="성과">RESULTS</span></h4>
+              <ul>
+                <li><span class="i18n" data-en="29+ documents across 7 categories, bilingual (EN/KO)" data-kr="7개 카테고리 29건+ 문서, 이중 언어(EN/KO)">29+ documents across 7 categories, bilingual (EN/KO)</span></li>
+                <li><span class="i18n" data-en="Single URL for all operational artifacts — eliminated document hunting" data-kr="모든 운영 산출물 단일 URL — 문서 찾기 시간 제거">Single URL for all operational artifacts — eliminated document hunting</span></li>
+                <li><span class="i18n" data-en="Adopted as official team onboarding resource" data-kr="공식 팀 온보딩 리소스로 채택">Adopted as official team onboarding resource</span></li>
+                <li><span class="i18n" data-en="Auto-deploy pipeline: git push → GitHub Actions → live portal" data-kr="자동 배포: git push → GitHub Actions → 라이브 포탈">Auto-deploy pipeline: git push → GitHub Actions → live portal</span></li>
+              </ul>
             </div>
           </div>
-          <div class="tech-tags">
-            <span class="tech-tag">GitHub Pages</span>
-            <span class="tech-tag">HTML/CSS</span>
-            <span class="tech-tag">Claude AI</span>
-            <span class="tech-tag">GitHub Actions</span>
+          <div class="project-bottom-row">
+            <div class="project-bottom-left">
+              <div class="project-metrics">
+                <div class="metric"><div class="val">29+</div><div class="key"><span class="i18n" data-en="Documents" data-kr="문서">Documents</span></div></div>
+                <div class="metric"><div class="val">7</div><div class="key"><span class="i18n" data-en="Categories" data-kr="카테고리">Categories</span></div></div>
+                <div class="metric"><div class="val">2</div><div class="key"><span class="i18n" data-en="Languages" data-kr="언어">Languages</span></div></div>
+              </div>
+              <div class="tech-tags">
+                <span class="tech-tag">GitHub Pages</span>
+                <span class="tech-tag">HTML/CSS</span>
+                <span class="tech-tag">Claude AI</span>
+                <span class="tech-tag">GitHub Actions</span>
+              </div>
+            </div>
           </div>
           <div class="project-links">
             <a href="https://tg-bizops.github.io/BizOPS/" target="_blank" rel="noopener" class="project-link">

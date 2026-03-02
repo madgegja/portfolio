@@ -86,7 +86,125 @@
     </div>
     <div class="projects-stack">
 
-<!-- ========== 1. BIZOPS AUTOMATION TOOLKIT ========== -->
+<!-- ========== 1. CS AI CHATBOT ========== -->
+<div class="project-card reveal">
+  <div class="card-header">
+    <div class="card-icon" style="background:linear-gradient(135deg,#cffafe,#a5f3fc);">💬</div>
+    <div style="flex:1"><div class="card-title-row"><span class="card-title">cs-ai-chatbot</span>
+      <div class="card-badges"><span class="badge badge-cyan">AI</span><span class="badge badge-lang"><span class="dot" style="background:#3572A5"></span> Python</span><span class="badge badge-outline">FastAPI</span></div>
+    </div></div>
+  </div>
+  <p class="card-desc"><span class="i18n" data-en="AI-powered CS chatbot with Claude API + RAG. 10 markets, 10 languages, fraud detection, smart escalation. Targets 38% self-service automation from 11,621 real ticket analysis." data-kr="Claude API + RAG 기반 AI CS 챗봇. 10개 마켓, 10개 언어, Fraud 탐지, 스마트 에스컬레이션. 11,621건 실데이터 분석 기반 38% 셀프서비스 자동화 목표.">AI-powered CS chatbot with Claude API + RAG. 10 markets, 10 languages, fraud detection, smart escalation. Targets 38% self-service automation from 11,621 real ticket analysis.</span></p>
+  <div class="card-body">
+    <div class="terminal"><div class="terminal-bar"><span class="terminal-dot r"></span><span class="terminal-dot y"></span><span class="terminal-dot g"></span></div>
+      <div class="terminal-body"><span class="folder">cs-ai-chatbot/</span><br>├── <span class="folder">app/</span><br>│   ├── <span class="file-g">main.py</span><br>│   ├── <span class="folder">routers/</span><br>│   │   ├── <span class="file-y">chat.py</span><br>│   │   ├── <span class="file-y">escalation.py</span><br>│   │   └── <span class="file-y">metrics.py</span><br>│   ├── <span class="folder">services/</span><br>│   │   ├── <span class="file-g">language_detector.py</span><br>│   │   ├── <span class="file-g">intent_classifier.py</span><br>│   │   ├── <span class="file-r">fraud_detector.py</span><br>│   │   └── <span class="file-c">response_generator.py</span><br>│   ├── <span class="folder">rag/</span><br>│   │   ├── <span class="file-p">knowledge_base.py</span><br>│   │   └── <span class="file-p">template_store.py</span><br>│   └── <span class="folder">models/</span><br>│       └── <span class="file-y">schemas.py</span><br>├── <span class="folder">tests/</span> <span class="dim">← 161 tests</span><br>├── <span class="file-c">Dockerfile</span><br>└── <span class="folder">.github/workflows/</span><br>&nbsp;&nbsp;&nbsp;&nbsp;└── <span class="file-c">ci-cd.yml</span></div>
+    </div>
+    <div class="features-section">
+      <div class="features-label"><span class="i18n" data-en="Key Features" data-kr="핵심 기능">Key Features</span></div>
+      <div class="feature-card"><div class="feature-icon" style="background:#cffafe;">🎯</div><div><div class="feature-title"><span class="i18n" data-en="Intent Classification" data-kr="의도 분류">Intent Classification</span></div><div class="feature-sub"><span class="i18n" data-en="7 categories × 32 sub-intents, 90/10 hybrid" data-kr="7개 카테고리 × 32개 하위 의도, 90/10 하이브리드">7 categories × 32 sub-intents, 90/10 hybrid</span></div></div></div>
+      <div class="feature-card"><div class="feature-icon" style="background:#fef2f2;">🛡️</div><div><div class="feature-title"><span class="i18n" data-en="Fraud Detection" data-kr="Fraud 탐지">Fraud Detection</span></div><div class="feature-sub"><span class="i18n" data-en="9 Red Flag scoring (0~100) + Minna/Ethoca block" data-kr="9개 Red Flag 스코어링 (0~100) + Minna/Ethoca 차단">9 Red Flag scoring (0~100) + Minna/Ethoca block</span></div></div></div>
+      <div class="feature-card"><div class="feature-icon" style="background:#d1fae5;">⚡</div><div><div class="feature-title"><span class="i18n" data-en="3-tier Smart Routing" data-kr="3단계 스마트 라우팅">3-tier Smart Routing</span></div><div class="feature-sub"><span class="i18n" data-en="L1 Escalate / L2 Draft / L3 Self-service (38%)" data-kr="L1 에스컬레이션 / L2 초안 / L3 셀프서비스 (38%)">L1 Escalate / L2 Draft / L3 Self-service (38%)</span></div></div></div>
+      <div class="feature-card"><div class="feature-icon" style="background:#fef3c7;">🌍</div><div><div class="feature-title"><span class="i18n" data-en="Multilingual Templates" data-kr="다국어 템플릿">Multilingual Templates</span></div><div class="feature-sub"><span class="i18n" data-en="30 templates × 10 languages, quality scoring" data-kr="30개 템플릿 × 10개 언어, 품질 스코어링">30 templates × 10 languages, quality scoring</span></div></div></div>
+    </div>
+  </div>
+  <div class="tag-row"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Claude API</span><span class="tag">ChromaDB</span><span class="tag">Docker</span><span class="tag">Pydantic v2</span><span class="tag">GitHub Actions</span></div>
+  <div class="psr-section">
+    <div class="psr-grid">
+      <div class="psr-card problem"><div class="psr-label">🔴 PROBLEM</div>
+        <div class="psr-item"><span class="i18n" data-en="<strong>1,600+ monthly tickets</strong> across 10 markets in 10 languages handled manually" data-kr="10개 마켓 10개 언어로 <strong>월 1,600건 이상</strong> 수작업 처리">
+          <strong>1,600+ monthly tickets</strong> across 10 markets in 10 languages handled manually</span></div>
+        <div class="psr-item"><span class="i18n" data-en="Inconsistent response quality — no fraud detection at intake" data-kr="응답 품질 불일치 — 접수 단계에서 Fraud 탐지 부재">Inconsistent response quality — no fraud detection at intake</span></div>
+      </div>
+      <div class="psr-card strategy"><div class="psr-label">🟠 STRATEGY</div>
+        <div class="psr-item"><span class="i18n" data-en="Designed <strong>hybrid AI chatbot</strong> — 90% template consistency + 10% Claude AI flexibility" data-kr="<strong>하이브리드 AI 챗봇</strong> 설계 — 90% 템플릿 일관성 + 10% Claude AI 유연성">Designed <strong>hybrid AI chatbot</strong> — 90% template consistency + 10% Claude AI flexibility</span></div>
+        <div class="psr-item"><span class="i18n" data-en="3-tier routing with RAG knowledge base and real-time fraud scoring" data-kr="RAG 지식베이스와 실시간 Fraud 스코어링을 갖춘 3단계 라우팅">3-tier routing with RAG knowledge base and real-time fraud scoring</span></div>
+        <div class="psr-item"><span class="i18n" data-en="Full CI/CD: 161 tests → Docker build → staging deploy" data-kr="풀 CI/CD: 161개 테스트 → Docker 빌드 → 스테이징 배포">Full CI/CD: 161 tests → Docker build → staging deploy</span></div>
+      </div>
+      <div class="psr-card result"><div class="psr-label">🟢 RESULT</div>
+        <div class="psr-item"><span class="i18n" data-en="<strong>38% self-service target</strong> (~630 tickets/month automated)" data-kr="<strong>38% 셀프서비스 목표</strong> (월 ~630건 자동 처리)">
+          <strong>38% self-service target</strong> (~630 tickets/month automated)</span></div>
+        <div class="psr-item"><span class="i18n" data-en="9 Red Flag fraud detection operational with quality scoring (0.0~1.0)" data-kr="9개 Red Flag Fraud 탐지 운영, 품질 스코어링 (0.0~1.0)">9 Red Flag fraud detection operational with quality scoring (0.0~1.0)</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="arch-section">
+    <div class="arch-label"><span class="i18n" data-en="Message Processing Pipeline" data-kr="메시지 처리 파이프라인">Message Processing Pipeline</span></div>
+    <svg viewBox="0 0 900 160">
+      <defs><marker id="ar2" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="8" markerHeight="6" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#0891b2"/></marker><filter id="s2"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.07"/></filter></defs>
+      <rect x="10" y="45" width="100" height="55" rx="10" fill="#cffafe" stroke="#0891b2" stroke-width="1.5" filter="url(#s2)"/><text x="60" y="68" text-anchor="middle" fill="#164e63" font-size="11" font-weight="700" font-family="Outfit">💬 Message</text><text x="60" y="84" text-anchor="middle" fill="#0891b2" font-size="9" font-family="Outfit">Customer Input</text>
+      <line x1="110" y1="72" x2="150" y2="72" stroke="#0891b2" stroke-width="1.5" marker-end="url(#ar2)" opacity="0.5"/>
+      <rect x="160" y="45" width="105" height="55" rx="10" fill="white" stroke="#0891b2" stroke-width="1.5" filter="url(#s2)"/><text x="212" y="68" text-anchor="middle" fill="#164e63" font-size="10" font-weight="700" font-family="Outfit">🌐 Lang Detect</text><text x="212" y="84" text-anchor="middle" fill="#6b7280" font-size="9" font-family="Outfit">10 languages</text>
+      <line x1="265" y1="72" x2="305" y2="50" stroke="#0891b2" stroke-width="1.5" marker-end="url(#ar2)" opacity="0.5"/>
+      <line x1="265" y1="72" x2="305" y2="95" stroke="#0891b2" stroke-width="1.5" marker-end="url(#ar2)" opacity="0.5"/>
+      <rect x="315" y="20" width="115" height="50" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5" filter="url(#s2)"/><text x="372" y="42" text-anchor="middle" fill="#991b1b" font-size="10" font-weight="700" font-family="Outfit">🛡️ Fraud</text><text x="372" y="58" text-anchor="middle" fill="#ef4444" font-size="9" font-family="Outfit">9 Red Flags</text>
+      <rect x="315" y="80" width="115" height="50" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5" filter="url(#s2)"/><text x="372" y="102" text-anchor="middle" fill="#1e40af" font-size="10" font-weight="700" font-family="Outfit">🎯 Intent</text><text x="372" y="118" text-anchor="middle" fill="#3b82f6" font-size="9" font-family="Outfit">7 × 32 classes</text>
+      <text x="305" y="78" text-anchor="middle" fill="#9ca3af" font-size="9" font-weight="600" font-family="Outfit">parallel</text>
+      <line x1="430" y1="45" x2="475" y2="65" stroke="#0891b2" stroke-width="1.5" marker-end="url(#ar2)" opacity="0.5"/>
+      <line x1="430" y1="105" x2="475" y2="80" stroke="#0891b2" stroke-width="1.5" marker-end="url(#ar2)" opacity="0.5"/>
+      <rect x="485" y="42" width="130" height="65" rx="12" fill="white" stroke="#0891b2" stroke-width="2.5" filter="url(#s2)"/>
+      <text x="550" y="65" text-anchor="middle" fill="#1f2937" font-size="12" font-weight="800" font-family="Outfit">🔀 Routing</text>
+      <text x="550" y="80" text-anchor="middle" fill="#ef4444" font-size="9" font-family="Outfit">L1 Escalate 15%</text>
+      <text x="550" y="93" text-anchor="middle" fill="#f59e0b" font-size="9" font-family="Outfit">L2 Draft 47%</text>
+      <line x1="615" y1="72" x2="655" y2="72" stroke="#0891b2" stroke-width="1.5" marker-end="url(#ar2)" opacity="0.5"/>
+      <rect x="665" y="35" width="130" height="75" rx="12" fill="#d1fae5" stroke="#10b981" stroke-width="2" filter="url(#s2)"/>
+      <text x="730" y="58" text-anchor="middle" fill="#065f46" font-size="12" font-weight="800" font-family="Outfit">✅ Response</text>
+      <text x="730" y="75" text-anchor="middle" fill="#10b981" font-size="9" font-family="Outfit">L3 Self-service 38%</text>
+      <text x="730" y="90" text-anchor="middle" fill="#6b7280" font-size="9" font-family="Outfit">Quality: 0.0~1.0</text>
+      <text x="730" y="103" text-anchor="middle" fill="#6b7280" font-size="9" font-family="Outfit">~630 tickets/month</text>
+    </svg>
+  </div>
+</div>
+
+<!-- ========== 2. BIZOPS ARTIFACTS PORTAL ========== -->
+<div class="project-card reveal">
+  <div class="card-header">
+    <div class="card-icon" style="background:linear-gradient(135deg,#fef3c7,#fde68a);">🗂️</div>
+    <div style="flex:1"><div class="card-title-row"><span class="card-title">bizops-artifacts-portal</span>
+      <div class="card-badges"><span class="badge badge-amber">OUTPUT</span><span class="badge badge-outline"><a href="https://tg-bizops.github.io/BizOPS/" target="_blank" style="color:inherit;">Live</a></span><span class="badge badge-outline">29 docs</span></div>
+    </div></div>
+  </div>
+  <p class="card-desc"><span class="i18n" data-en="Public documentation portal hosting 29 operational artifacts across 5 categories. CS manuals (EN/KO), chargeback templates, AI chatbot docs, analysis reports, and weekly archives." data-kr="5개 카테고리 29개 운영 산출물 공개 포털. CS 매뉴얼(EN/KO), 차지백 템플릿, AI 챗봇 문서, 분석 리포트, 주간 보고서 아카이브.">Public documentation portal hosting 29 operational artifacts across 5 categories. CS manuals (EN/KO), chargeback templates, AI chatbot docs, analysis reports, and weekly archives.</span></p>
+  <div class="card-body">
+    <div class="terminal"><div class="terminal-bar"><span class="terminal-dot r"></span><span class="terminal-dot y"></span><span class="terminal-dot g"></span></div>
+      <div class="terminal-body"><span class="folder">bizops-artifacts-portal/</span><br>├── <span class="file-g">index.html</span><br>├── <span class="folder">cs-operations/</span> <span class="dim">← 10 docs</span><br>│   ├── <span class="file-g">cs_manual_EN.html</span><br>│   ├── <span class="file-g">cs_manual_KO.html</span><br>│   ├── <span class="file-y">fraud_analysis.html</span><br>│   ├── <span class="file-y">cs_infographic.html</span><br>│   ├── <span class="file-y">cs_flow_diagram.html</span><br>│   └── <span class="folder">weekly-reports/</span> <span class="dim">← W1~W4</span><br>├── <span class="folder">chargeback/</span> <span class="dim">← 3 docs</span><br>│   ├── <span class="file-r">operation_manual.html</span><br>│   ├── <span class="file-y">template.xlsx</span><br>│   └── <span class="file-y">flow_diagram.html</span><br>├── <span class="folder">ai-chatbot/</span> <span class="dim">← 13 docs</span><br>│   ├── <span class="file-c">architecture.html</span><br>│   ├── <span class="file-c">one_pager.html</span><br>│   └── <span class="file-c">operation_guide.html</span><br>├── <span class="folder">ip-protection/</span> <span class="dim">← 1 doc</span><br>│   └── <span class="file-p">ip_manual.html</span><br>└── <span class="folder">dashboards/</span> <span class="dim">← 2 docs</span><br>&nbsp;&nbsp;&nbsp;&nbsp;├── <span class="file-p">ticket_dashboard.html</span><br>&nbsp;&nbsp;&nbsp;&nbsp;└── <span class="file-p">dashboard_manual.html</span></div>
+    </div>
+    <div class="features-section">
+      <div class="features-label"><span class="i18n" data-en="Categories" data-kr="카테고리">Categories</span></div>
+      <div class="feature-card"><div class="feature-icon" style="background:#fef3c7;">📞</div><div><div class="feature-title"><span class="i18n" data-en="CS Operations (10 docs)" data-kr="CS 운영 (10개 문서)">CS Operations (10 docs)</span></div><div class="feature-sub"><span class="i18n" data-en="EN/KO manuals, fraud report, flow diagrams, weekly reports" data-kr="EN/KO 매뉴얼, Fraud 리포트, 플로우 다이어그램, 주간 보고서">EN/KO manuals, fraud report, flow diagrams, weekly reports</span></div></div></div>
+      <div class="feature-card"><div class="feature-icon" style="background:#cffafe;">💬</div><div><div class="feature-title"><span class="i18n" data-en="AI Chatbot Planning (13 docs)" data-kr="AI 챗봇 기획 (13개 문서)">AI Chatbot Planning (13 docs)</span></div><div class="feature-sub"><span class="i18n" data-en="Architecture, roadmap, demo, training, operation manual" data-kr="아키텍처, 로드맵, 시연, 교육, 운영 매뉴얼">Architecture, roadmap, demo, training, operation manual</span></div></div></div>
+      <div class="feature-card"><div class="feature-icon" style="background:#fef2f2;">💳</div><div><div class="feature-title"><span class="i18n" data-en="Chargeback (3 docs)" data-kr="차지백 (3개 문서)">Chargeback (3 docs)</span></div><div class="feature-sub"><span class="i18n" data-en="8 PG dispute manual + evidence form V5 + template v2" data-kr="8개 PG사 소명 매뉴얼 + 증빙 폼 V5 + 템플릿 v2">8 PG dispute manual + evidence form V5 + template v2</span></div></div></div>
+      <div class="feature-card"><div class="feature-icon" style="background:#ede9fe;">📊</div><div><div class="feature-title"><span class="i18n" data-en="Dashboards &amp; IP (3 docs)" data-kr="대시보드 &amp; IP (3개 문서)">Dashboards &amp; IP (3 docs)</span></div><div class="feature-sub"><span class="i18n" data-en="Ticket dashboard, manual, IP protection guide" data-kr="티켓 대시보드, 매뉴얼, IP 보호 가이드">Ticket dashboard, manual, IP protection guide</span></div></div></div>
+    </div>
+  </div>
+  <div class="tag-row"><span class="tag">GitHub Pages</span><span class="tag">HTML/CSS</span><span class="tag">GitHub Actions</span><span class="tag">Claude AI</span><span class="tag">@media print</span><span class="tag">Confluence</span></div>
+  <div class="psr-section">
+    <div class="psr-grid">
+      <div class="psr-card problem"><div class="psr-label">🔴 PROBLEM</div>
+        <div class="psr-item"><span class="i18n" data-en="Operational docs <strong>scattered across</strong> Confluence, Sheets, and local files" data-kr="운영 문서가 Confluence, Sheets, 로컬 파일에 <strong>분산</strong>">Operational docs <strong>scattered across</strong> Confluence, Sheets, and local files</span></div>
+        <div class="psr-item"><span class="i18n" data-en="No single source of truth for 10 global markets' operations" data-kr="10개 글로벌 마켓 운영의 단일 진실 소스 부재">No single source of truth for 10 global markets' operations</span></div>
+      </div>
+      <div class="psr-card strategy"><div class="psr-label">🟠 STRATEGY</div>
+        <div class="psr-item"><span class="i18n" data-en="Built <strong>centralized GitHub Pages portal</strong> with CI/CD auto-deployment" data-kr="<strong>중앙 집중형 GitHub Pages 포털</strong> 구축, CI/CD 자동 배포">Built <strong>centralized GitHub Pages portal</strong> with CI/CD auto-deployment</span></div>
+        <div class="psr-item"><span class="i18n" data-en="5 categories, EN/KO bilingual, print-optimized for PDF export" data-kr="5개 카테고리, EN/KO 이중 언어, PDF 내보내기용 인쇄 최적화">5 categories, EN/KO bilingual, print-optimized for PDF export</span></div>
+      </div>
+      <div class="psr-card result"><div class="psr-label">🟢 RESULT</div>
+        <div class="psr-item"><span class="i18n" data-en="<strong>29 documents</strong> publicly accessible — all authored solo" data-kr="<strong>29개 문서</strong> 공개 운영 — 모든 산출물 단독 기획·작성">
+          <strong>29 documents</strong> publicly accessible — all authored solo</span></div>
+        <div class="psr-item"><span class="i18n" data-en="Single source of truth for 10 global markets with auto-deploy on push" data-kr="10개 글로벌 마켓의 단일 진실 소스, 푸시 시 자동 배포">Single source of truth for 10 global markets with auto-deploy on push</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="kpi-section">
+    <div class="kpi-title"><span class="i18n" data-en="📁 Documents by Category" data-kr="📁 카테고리별 문서">📁 Documents by Category</span></div>
+    <div class="bar-row"><span class="bar-label">AI Chatbot</span><div class="bar-track"><div class="bar-fill" style="width:100%;background:linear-gradient(90deg,#0891b2,#22d3ee)"></div></div><span class="bar-value" style="color:#0891b2">13</span></div>
+    <div class="bar-row"><span class="bar-label">CS Ops</span><div class="bar-track"><div class="bar-fill" style="width:77%;background:linear-gradient(90deg,#3b82f6,#60a5fa)"></div></div><span class="bar-value" style="color:#3b82f6">10</span></div>
+    <div class="bar-row"><span class="bar-label">Chargeback</span><div class="bar-track"><div class="bar-fill" style="width:23%;background:linear-gradient(90deg,#ef4444,#f87171)"></div></div><span class="bar-value" style="color:#ef4444">3</span></div>
+    <div class="bar-row"><span class="bar-label">Dashboard</span><div class="bar-track"><div class="bar-fill" style="width:15%;background:linear-gradient(90deg,#8b5cf6,#a78bfa)"></div></div><span class="bar-value" style="color:#8b5cf6">2</span></div>
+    <div class="bar-row"><span class="bar-label">IP Protection</span><div class="bar-track"><div class="bar-fill" style="width:8%;background:linear-gradient(90deg,#10b981,#34d399)"></div></div><span class="bar-value" style="color:#10b981">1</span></div>
+  </div>
+</div>
+
+<!-- ========== 3. BIZOPS AUTOMATION TOOLKIT ========== -->
 <div class="project-card reveal">
   <div class="card-header">
     <div class="card-icon" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe);">🔧</div>
@@ -159,7 +277,7 @@
   </div>
 </div>
 
-<!-- ========== 2. GLOBAL CS ANALYTICS ========== -->
+<!-- ========== 4. GLOBAL CS ANALYTICS ========== -->
 <div class="project-card reveal">
   <div class="card-header">
     <div class="card-icon" style="background:linear-gradient(135deg,#d1fae5,#a7f3d0);">📈</div>
@@ -207,7 +325,7 @@
   </div>
 </div>
 
-<!-- ========== 3. PAYMENT OPS PLAYBOOK ========== -->
+<!-- ========== 5. PAYMENT OPS PLAYBOOK ========== -->
 <div class="project-card reveal">
   <div class="card-header">
     <div class="card-icon" style="background:linear-gradient(135deg,#ede9fe,#ddd6fe);">📖</div>
@@ -244,124 +362,6 @@
         <div class="psr-item"><span class="i18n" data-en="Reusable reference for PG partnerships, FDS design, multi-market expansion" data-kr="PG 파트너십, FDS 설계, 다마켓 확장에 재사용 가능한 레퍼런스">Reusable reference for PG partnerships, FDS design, multi-market expansion</span></div>
       </div>
     </div>
-  </div>
-</div>
-
-<!-- ========== 4. CS AI CHATBOT ========== -->
-<div class="project-card reveal">
-  <div class="card-header">
-    <div class="card-icon" style="background:linear-gradient(135deg,#cffafe,#a5f3fc);">💬</div>
-    <div style="flex:1"><div class="card-title-row"><span class="card-title">cs-ai-chatbot</span>
-      <div class="card-badges"><span class="badge badge-cyan">AI</span><span class="badge badge-lang"><span class="dot" style="background:#3572A5"></span> Python</span><span class="badge badge-outline">FastAPI</span></div>
-    </div></div>
-  </div>
-  <p class="card-desc"><span class="i18n" data-en="AI-powered CS chatbot with Claude API + RAG. 10 markets, 10 languages, fraud detection, smart escalation. Targets 38% self-service automation from 11,621 real ticket analysis." data-kr="Claude API + RAG 기반 AI CS 챗봇. 10개 마켓, 10개 언어, Fraud 탐지, 스마트 에스컬레이션. 11,621건 실데이터 분석 기반 38% 셀프서비스 자동화 목표.">AI-powered CS chatbot with Claude API + RAG. 10 markets, 10 languages, fraud detection, smart escalation. Targets 38% self-service automation from 11,621 real ticket analysis.</span></p>
-  <div class="card-body">
-    <div class="terminal"><div class="terminal-bar"><span class="terminal-dot r"></span><span class="terminal-dot y"></span><span class="terminal-dot g"></span></div>
-      <div class="terminal-body"><span class="folder">cs-ai-chatbot/</span><br>├── <span class="folder">app/</span><br>│   ├── <span class="file-g">main.py</span><br>│   ├── <span class="folder">routers/</span><br>│   │   ├── <span class="file-y">chat.py</span><br>│   │   ├── <span class="file-y">escalation.py</span><br>│   │   └── <span class="file-y">metrics.py</span><br>│   ├── <span class="folder">services/</span><br>│   │   ├── <span class="file-g">language_detector.py</span><br>│   │   ├── <span class="file-g">intent_classifier.py</span><br>│   │   ├── <span class="file-r">fraud_detector.py</span><br>│   │   └── <span class="file-c">response_generator.py</span><br>│   ├── <span class="folder">rag/</span><br>│   │   ├── <span class="file-p">knowledge_base.py</span><br>│   │   └── <span class="file-p">template_store.py</span><br>│   └── <span class="folder">models/</span><br>│       └── <span class="file-y">schemas.py</span><br>├── <span class="folder">tests/</span> <span class="dim">← 161 tests</span><br>├── <span class="file-c">Dockerfile</span><br>└── <span class="folder">.github/workflows/</span><br>&nbsp;&nbsp;&nbsp;&nbsp;└── <span class="file-c">ci-cd.yml</span></div>
-    </div>
-    <div class="features-section">
-      <div class="features-label"><span class="i18n" data-en="Key Features" data-kr="핵심 기능">Key Features</span></div>
-      <div class="feature-card"><div class="feature-icon" style="background:#cffafe;">🎯</div><div><div class="feature-title"><span class="i18n" data-en="Intent Classification" data-kr="의도 분류">Intent Classification</span></div><div class="feature-sub"><span class="i18n" data-en="7 categories × 32 sub-intents, 90/10 hybrid" data-kr="7개 카테고리 × 32개 하위 의도, 90/10 하이브리드">7 categories × 32 sub-intents, 90/10 hybrid</span></div></div></div>
-      <div class="feature-card"><div class="feature-icon" style="background:#fef2f2;">🛡️</div><div><div class="feature-title"><span class="i18n" data-en="Fraud Detection" data-kr="Fraud 탐지">Fraud Detection</span></div><div class="feature-sub"><span class="i18n" data-en="9 Red Flag scoring (0~100) + Minna/Ethoca block" data-kr="9개 Red Flag 스코어링 (0~100) + Minna/Ethoca 차단">9 Red Flag scoring (0~100) + Minna/Ethoca block</span></div></div></div>
-      <div class="feature-card"><div class="feature-icon" style="background:#d1fae5;">⚡</div><div><div class="feature-title"><span class="i18n" data-en="3-tier Smart Routing" data-kr="3단계 스마트 라우팅">3-tier Smart Routing</span></div><div class="feature-sub"><span class="i18n" data-en="L1 Escalate / L2 Draft / L3 Self-service (38%)" data-kr="L1 에스컬레이션 / L2 초안 / L3 셀프서비스 (38%)">L1 Escalate / L2 Draft / L3 Self-service (38%)</span></div></div></div>
-      <div class="feature-card"><div class="feature-icon" style="background:#fef3c7;">🌍</div><div><div class="feature-title"><span class="i18n" data-en="Multilingual Templates" data-kr="다국어 템플릿">Multilingual Templates</span></div><div class="feature-sub"><span class="i18n" data-en="30 templates × 10 languages, quality scoring" data-kr="30개 템플릿 × 10개 언어, 품질 스코어링">30 templates × 10 languages, quality scoring</span></div></div></div>
-    </div>
-  </div>
-  <div class="tag-row"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Claude API</span><span class="tag">ChromaDB</span><span class="tag">Docker</span><span class="tag">Pydantic v2</span><span class="tag">GitHub Actions</span></div>
-  <div class="psr-section">
-    <div class="psr-grid">
-      <div class="psr-card problem"><div class="psr-label">🔴 PROBLEM</div>
-        <div class="psr-item"><span class="i18n" data-en="<strong>1,600+ monthly tickets</strong> across 10 markets in 10 languages handled manually" data-kr="10개 마켓 10개 언어로 <strong>월 1,600건 이상</strong> 수작업 처리">
-          <strong>1,600+ monthly tickets</strong> across 10 markets in 10 languages handled manually</span></div>
-        <div class="psr-item"><span class="i18n" data-en="Inconsistent response quality — no fraud detection at intake" data-kr="응답 품질 불일치 — 접수 단계에서 Fraud 탐지 부재">Inconsistent response quality — no fraud detection at intake</span></div>
-      </div>
-      <div class="psr-card strategy"><div class="psr-label">🟠 STRATEGY</div>
-        <div class="psr-item"><span class="i18n" data-en="Designed <strong>hybrid AI chatbot</strong> — 90% template consistency + 10% Claude AI flexibility" data-kr="<strong>하이브리드 AI 챗봇</strong> 설계 — 90% 템플릿 일관성 + 10% Claude AI 유연성">Designed <strong>hybrid AI chatbot</strong> — 90% template consistency + 10% Claude AI flexibility</span></div>
-        <div class="psr-item"><span class="i18n" data-en="3-tier routing with RAG knowledge base and real-time fraud scoring" data-kr="RAG 지식베이스와 실시간 Fraud 스코어링을 갖춘 3단계 라우팅">3-tier routing with RAG knowledge base and real-time fraud scoring</span></div>
-        <div class="psr-item"><span class="i18n" data-en="Full CI/CD: 161 tests → Docker build → staging deploy" data-kr="풀 CI/CD: 161개 테스트 → Docker 빌드 → 스테이징 배포">Full CI/CD: 161 tests → Docker build → staging deploy</span></div>
-      </div>
-      <div class="psr-card result"><div class="psr-label">🟢 RESULT</div>
-        <div class="psr-item"><span class="i18n" data-en="<strong>38% self-service target</strong> (~630 tickets/month automated)" data-kr="<strong>38% 셀프서비스 목표</strong> (월 ~630건 자동 처리)">
-          <strong>38% self-service target</strong> (~630 tickets/month automated)</span></div>
-        <div class="psr-item"><span class="i18n" data-en="9 Red Flag fraud detection operational with quality scoring (0.0~1.0)" data-kr="9개 Red Flag Fraud 탐지 운영, 품질 스코어링 (0.0~1.0)">9 Red Flag fraud detection operational with quality scoring (0.0~1.0)</span></div>
-      </div>
-    </div>
-  </div>
-  <div class="arch-section">
-    <div class="arch-label"><span class="i18n" data-en="Message Processing Pipeline" data-kr="메시지 처리 파이프라인">Message Processing Pipeline</span></div>
-    <svg viewBox="0 0 900 160">
-      <defs><marker id="ar2" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="8" markerHeight="6" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#0891b2"/></marker><filter id="s2"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.07"/></filter></defs>
-      <rect x="10" y="45" width="100" height="55" rx="10" fill="#cffafe" stroke="#0891b2" stroke-width="1.5" filter="url(#s2)"/><text x="60" y="68" text-anchor="middle" fill="#164e63" font-size="11" font-weight="700" font-family="Outfit">💬 Message</text><text x="60" y="84" text-anchor="middle" fill="#0891b2" font-size="9" font-family="Outfit">Customer Input</text>
-      <line x1="110" y1="72" x2="150" y2="72" stroke="#0891b2" stroke-width="1.5" marker-end="url(#ar2)" opacity="0.5"/>
-      <rect x="160" y="45" width="105" height="55" rx="10" fill="white" stroke="#0891b2" stroke-width="1.5" filter="url(#s2)"/><text x="212" y="68" text-anchor="middle" fill="#164e63" font-size="10" font-weight="700" font-family="Outfit">🌐 Lang Detect</text><text x="212" y="84" text-anchor="middle" fill="#6b7280" font-size="9" font-family="Outfit">10 languages</text>
-      <line x1="265" y1="72" x2="305" y2="50" stroke="#0891b2" stroke-width="1.5" marker-end="url(#ar2)" opacity="0.5"/>
-      <line x1="265" y1="72" x2="305" y2="95" stroke="#0891b2" stroke-width="1.5" marker-end="url(#ar2)" opacity="0.5"/>
-      <rect x="315" y="20" width="115" height="50" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5" filter="url(#s2)"/><text x="372" y="42" text-anchor="middle" fill="#991b1b" font-size="10" font-weight="700" font-family="Outfit">🛡️ Fraud</text><text x="372" y="58" text-anchor="middle" fill="#ef4444" font-size="9" font-family="Outfit">9 Red Flags</text>
-      <rect x="315" y="80" width="115" height="50" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5" filter="url(#s2)"/><text x="372" y="102" text-anchor="middle" fill="#1e40af" font-size="10" font-weight="700" font-family="Outfit">🎯 Intent</text><text x="372" y="118" text-anchor="middle" fill="#3b82f6" font-size="9" font-family="Outfit">7 × 32 classes</text>
-      <text x="305" y="78" text-anchor="middle" fill="#9ca3af" font-size="9" font-weight="600" font-family="Outfit">parallel</text>
-      <line x1="430" y1="45" x2="475" y2="65" stroke="#0891b2" stroke-width="1.5" marker-end="url(#ar2)" opacity="0.5"/>
-      <line x1="430" y1="105" x2="475" y2="80" stroke="#0891b2" stroke-width="1.5" marker-end="url(#ar2)" opacity="0.5"/>
-      <rect x="485" y="42" width="130" height="65" rx="12" fill="white" stroke="#0891b2" stroke-width="2.5" filter="url(#s2)"/>
-      <text x="550" y="65" text-anchor="middle" fill="#1f2937" font-size="12" font-weight="800" font-family="Outfit">🔀 Routing</text>
-      <text x="550" y="80" text-anchor="middle" fill="#ef4444" font-size="9" font-family="Outfit">L1 Escalate 15%</text>
-      <text x="550" y="93" text-anchor="middle" fill="#f59e0b" font-size="9" font-family="Outfit">L2 Draft 47%</text>
-      <line x1="615" y1="72" x2="655" y2="72" stroke="#0891b2" stroke-width="1.5" marker-end="url(#ar2)" opacity="0.5"/>
-      <rect x="665" y="35" width="130" height="75" rx="12" fill="#d1fae5" stroke="#10b981" stroke-width="2" filter="url(#s2)"/>
-      <text x="730" y="58" text-anchor="middle" fill="#065f46" font-size="12" font-weight="800" font-family="Outfit">✅ Response</text>
-      <text x="730" y="75" text-anchor="middle" fill="#10b981" font-size="9" font-family="Outfit">L3 Self-service 38%</text>
-      <text x="730" y="90" text-anchor="middle" fill="#6b7280" font-size="9" font-family="Outfit">Quality: 0.0~1.0</text>
-      <text x="730" y="103" text-anchor="middle" fill="#6b7280" font-size="9" font-family="Outfit">~630 tickets/month</text>
-    </svg>
-  </div>
-</div>
-
-<!-- ========== 5. BIZOPS ARTIFACTS PORTAL ========== -->
-<div class="project-card reveal">
-  <div class="card-header">
-    <div class="card-icon" style="background:linear-gradient(135deg,#fef3c7,#fde68a);">🗂️</div>
-    <div style="flex:1"><div class="card-title-row"><span class="card-title">bizops-artifacts-portal</span>
-      <div class="card-badges"><span class="badge badge-amber">OUTPUT</span><span class="badge badge-outline"><a href="https://tg-bizops.github.io/BizOPS/" target="_blank" style="color:inherit;">Live</a></span><span class="badge badge-outline">29 docs</span></div>
-    </div></div>
-  </div>
-  <p class="card-desc"><span class="i18n" data-en="Public documentation portal hosting 29 operational artifacts across 5 categories. CS manuals (EN/KO), chargeback templates, AI chatbot docs, analysis reports, and weekly archives." data-kr="5개 카테고리 29개 운영 산출물 공개 포털. CS 매뉴얼(EN/KO), 차지백 템플릿, AI 챗봇 문서, 분석 리포트, 주간 보고서 아카이브.">Public documentation portal hosting 29 operational artifacts across 5 categories. CS manuals (EN/KO), chargeback templates, AI chatbot docs, analysis reports, and weekly archives.</span></p>
-  <div class="card-body">
-    <div class="terminal"><div class="terminal-bar"><span class="terminal-dot r"></span><span class="terminal-dot y"></span><span class="terminal-dot g"></span></div>
-      <div class="terminal-body"><span class="folder">bizops-artifacts-portal/</span><br>├── <span class="file-g">index.html</span><br>├── <span class="folder">cs-operations/</span> <span class="dim">← 10 docs</span><br>│   ├── <span class="file-g">cs_manual_EN.html</span><br>│   ├── <span class="file-g">cs_manual_KO.html</span><br>│   ├── <span class="file-y">fraud_analysis.html</span><br>│   ├── <span class="file-y">cs_infographic.html</span><br>│   ├── <span class="file-y">cs_flow_diagram.html</span><br>│   └── <span class="folder">weekly-reports/</span> <span class="dim">← W1~W4</span><br>├── <span class="folder">chargeback/</span> <span class="dim">← 3 docs</span><br>│   ├── <span class="file-r">operation_manual.html</span><br>│   ├── <span class="file-y">template.xlsx</span><br>│   └── <span class="file-y">flow_diagram.html</span><br>├── <span class="folder">ai-chatbot/</span> <span class="dim">← 13 docs</span><br>│   ├── <span class="file-c">architecture.html</span><br>│   ├── <span class="file-c">one_pager.html</span><br>│   └── <span class="file-c">operation_guide.html</span><br>├── <span class="folder">ip-protection/</span> <span class="dim">← 1 doc</span><br>│   └── <span class="file-p">ip_manual.html</span><br>└── <span class="folder">dashboards/</span> <span class="dim">← 2 docs</span><br>&nbsp;&nbsp;&nbsp;&nbsp;├── <span class="file-p">ticket_dashboard.html</span><br>&nbsp;&nbsp;&nbsp;&nbsp;└── <span class="file-p">dashboard_manual.html</span></div>
-    </div>
-    <div class="features-section">
-      <div class="features-label"><span class="i18n" data-en="Categories" data-kr="카테고리">Categories</span></div>
-      <div class="feature-card"><div class="feature-icon" style="background:#fef3c7;">📞</div><div><div class="feature-title"><span class="i18n" data-en="CS Operations (10 docs)" data-kr="CS 운영 (10개 문서)">CS Operations (10 docs)</span></div><div class="feature-sub"><span class="i18n" data-en="EN/KO manuals, fraud report, flow diagrams, weekly reports" data-kr="EN/KO 매뉴얼, Fraud 리포트, 플로우 다이어그램, 주간 보고서">EN/KO manuals, fraud report, flow diagrams, weekly reports</span></div></div></div>
-      <div class="feature-card"><div class="feature-icon" style="background:#cffafe;">💬</div><div><div class="feature-title"><span class="i18n" data-en="AI Chatbot Planning (13 docs)" data-kr="AI 챗봇 기획 (13개 문서)">AI Chatbot Planning (13 docs)</span></div><div class="feature-sub"><span class="i18n" data-en="Architecture, roadmap, demo, training, operation manual" data-kr="아키텍처, 로드맵, 시연, 교육, 운영 매뉴얼">Architecture, roadmap, demo, training, operation manual</span></div></div></div>
-      <div class="feature-card"><div class="feature-icon" style="background:#fef2f2;">💳</div><div><div class="feature-title"><span class="i18n" data-en="Chargeback (3 docs)" data-kr="차지백 (3개 문서)">Chargeback (3 docs)</span></div><div class="feature-sub"><span class="i18n" data-en="8 PG dispute manual + evidence form V5 + template v2" data-kr="8개 PG사 소명 매뉴얼 + 증빙 폼 V5 + 템플릿 v2">8 PG dispute manual + evidence form V5 + template v2</span></div></div></div>
-      <div class="feature-card"><div class="feature-icon" style="background:#ede9fe;">📊</div><div><div class="feature-title"><span class="i18n" data-en="Dashboards &amp; IP (3 docs)" data-kr="대시보드 &amp; IP (3개 문서)">Dashboards &amp; IP (3 docs)</span></div><div class="feature-sub"><span class="i18n" data-en="Ticket dashboard, manual, IP protection guide" data-kr="티켓 대시보드, 매뉴얼, IP 보호 가이드">Ticket dashboard, manual, IP protection guide</span></div></div></div>
-    </div>
-  </div>
-  <div class="tag-row"><span class="tag">GitHub Pages</span><span class="tag">HTML/CSS</span><span class="tag">GitHub Actions</span><span class="tag">Claude AI</span><span class="tag">@media print</span><span class="tag">Confluence</span></div>
-  <div class="psr-section">
-    <div class="psr-grid">
-      <div class="psr-card problem"><div class="psr-label">🔴 PROBLEM</div>
-        <div class="psr-item"><span class="i18n" data-en="Operational docs <strong>scattered across</strong> Confluence, Sheets, and local files" data-kr="운영 문서가 Confluence, Sheets, 로컬 파일에 <strong>분산</strong>">Operational docs <strong>scattered across</strong> Confluence, Sheets, and local files</span></div>
-        <div class="psr-item"><span class="i18n" data-en="No single source of truth for 10 global markets' operations" data-kr="10개 글로벌 마켓 운영의 단일 진실 소스 부재">No single source of truth for 10 global markets' operations</span></div>
-      </div>
-      <div class="psr-card strategy"><div class="psr-label">🟠 STRATEGY</div>
-        <div class="psr-item"><span class="i18n" data-en="Built <strong>centralized GitHub Pages portal</strong> with CI/CD auto-deployment" data-kr="<strong>중앙 집중형 GitHub Pages 포털</strong> 구축, CI/CD 자동 배포">Built <strong>centralized GitHub Pages portal</strong> with CI/CD auto-deployment</span></div>
-        <div class="psr-item"><span class="i18n" data-en="5 categories, EN/KO bilingual, print-optimized for PDF export" data-kr="5개 카테고리, EN/KO 이중 언어, PDF 내보내기용 인쇄 최적화">5 categories, EN/KO bilingual, print-optimized for PDF export</span></div>
-      </div>
-      <div class="psr-card result"><div class="psr-label">🟢 RESULT</div>
-        <div class="psr-item"><span class="i18n" data-en="<strong>29 documents</strong> publicly accessible — all authored solo" data-kr="<strong>29개 문서</strong> 공개 운영 — 모든 산출물 단독 기획·작성">
-          <strong>29 documents</strong> publicly accessible — all authored solo</span></div>
-        <div class="psr-item"><span class="i18n" data-en="Single source of truth for 10 global markets with auto-deploy on push" data-kr="10개 글로벌 마켓의 단일 진실 소스, 푸시 시 자동 배포">Single source of truth for 10 global markets with auto-deploy on push</span></div>
-      </div>
-    </div>
-  </div>
-  <div class="kpi-section">
-    <div class="kpi-title"><span class="i18n" data-en="📁 Documents by Category" data-kr="📁 카테고리별 문서">📁 Documents by Category</span></div>
-    <div class="bar-row"><span class="bar-label">AI Chatbot</span><div class="bar-track"><div class="bar-fill" style="width:100%;background:linear-gradient(90deg,#0891b2,#22d3ee)"></div></div><span class="bar-value" style="color:#0891b2">13</span></div>
-    <div class="bar-row"><span class="bar-label">CS Ops</span><div class="bar-track"><div class="bar-fill" style="width:77%;background:linear-gradient(90deg,#3b82f6,#60a5fa)"></div></div><span class="bar-value" style="color:#3b82f6">10</span></div>
-    <div class="bar-row"><span class="bar-label">Chargeback</span><div class="bar-track"><div class="bar-fill" style="width:23%;background:linear-gradient(90deg,#ef4444,#f87171)"></div></div><span class="bar-value" style="color:#ef4444">3</span></div>
-    <div class="bar-row"><span class="bar-label">Dashboard</span><div class="bar-track"><div class="bar-fill" style="width:15%;background:linear-gradient(90deg,#8b5cf6,#a78bfa)"></div></div><span class="bar-value" style="color:#8b5cf6">2</span></div>
-    <div class="bar-row"><span class="bar-label">IP Protection</span><div class="bar-track"><div class="bar-fill" style="width:8%;background:linear-gradient(90deg,#10b981,#34d399)"></div></div><span class="bar-value" style="color:#10b981">1</span></div>
   </div>
 </div>
 
@@ -637,7 +637,7 @@
       <div class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-card">
         <span class="timeline-period">2022.01 — 2023.11</span>
         <h3><span class="i18n" data-en="Part Lead, Blockchain Business" data-kr="파트 리드, 블록체인 사업">Part Lead, Blockchain Business</span></h3>
-        <span class="timeline-company">NX3 Games (NEXON)</span><span class="timeline-location"> · <span class="i18n" data-en="Seoul" data-kr="서울">Seoul</span></span>
+        <span class="timeline-company">NX3 Games</span><span class="timeline-location"> · <span class="i18n" data-en="Seoul" data-kr="서울">Seoul</span></span>
         <div class="timeline-highlights"><span class="timeline-tag">Blockchain</span><span class="timeline-tag">NFT</span><span class="timeline-tag">Web3</span></div>
         <p class="timeline-desc"><span class="i18n" data-en="Led blockchain game business development and NFT marketplace operations. Managed Web3 partnerships and tokenomics design." data-kr="블록체인 게임 사업 개발 및 NFT 마켓플레이스 운영 리드. Web3 파트너십 관리 및 토크노믹스 설계.">Led blockchain game business development and NFT marketplace operations. Managed Web3 partnerships and tokenomics design.</span></p>
       </div></div>

@@ -76,8 +76,8 @@
           <span class="lbl"><span class="i18n" data-en="Markets" data-kr="마켓">Markets</span></span>
         </div>
         <div class="hero-stat">
-          <span class="num">3</span>
-          <span class="lbl"><span class="i18n" data-en="Open Source" data-kr="오픈소스">Open Source</span></span>
+          <span class="num">5</span>
+          <span class="lbl"><span class="i18n" data-en="Projects" data-kr="프로젝트">Projects</span></span>
         </div>
         <div class="hero-stat">
           <span class="num">13K+</span>
@@ -340,6 +340,176 @@
           <span class="tech-tag">FDS</span>
           <span class="tech-tag">AML/KYC</span>
           <span class="tech-tag">Mermaid</span>
+        </div>
+      </div>
+
+      <!-- ===== REPO 4: cs-ai-chatbot ===== -->
+      <div class="repo-card reveal" data-accent="cyan">
+        <div class="repo-header">
+          <div class="repo-icon">💬</div>
+          <div class="repo-meta">
+            <h3 class="repo-name">cs-ai-chatbot</h3>
+            <p class="repo-desc"><span class="i18n"
+              data-en="AI-powered CS chatbot with Claude API + RAG. Handles 10 markets, 10 languages, fraud detection, and smart escalation. Targets 38% self-service automation from 11,621 real ticket analysis."
+              data-kr="Claude API + RAG 기반 AI CS 챗봇. 10개 마켓, 10개 언어 대응, Fraud 탐지, 스마트 에스컬레이션. 11,621건 실데이터 분석 기반 38% 셀프서비스 자동화 목표.">AI-powered CS chatbot with Claude API + RAG. Handles 10 markets, 10 languages, fraud detection, and smart escalation. Targets 38% self-service automation from 11,621 real ticket analysis.</span></p>
+          </div>
+          <div class="repo-badges">
+            <span class="repo-pillar"><span class="i18n" data-en="AI" data-kr="AI">AI</span></span>
+            <span class="repo-badge"><span class="tech-dot" style="background:#3572A5;"></span>Python</span>
+            <span class="repo-badge">FastAPI</span>
+          </div>
+        </div>
+        <div class="repo-body">
+          <div class="file-tree">
+            <div class="file-tree-header">
+              <span class="tree-dot r"></span><span class="tree-dot y"></span><span class="tree-dot g"></span>
+            </div>
+            <pre><span class="dir">cs-ai-chatbot/</span>
+├── <span class="dir">app/</span>
+│   ├── <span class="key">main.py</span>
+│   ├── <span class="dir">routers/</span>
+│   │   ├── <span class="file">chat.py</span>
+│   │   ├── <span class="file">escalation.py</span>
+│   │   └── <span class="file">metrics.py</span>
+│   ├── <span class="dir">services/</span>
+│   │   ├── <span class="key">language_detector.py</span>
+│   │   ├── <span class="key">intent_classifier.py</span>
+│   │   ├── <span class="key">fraud_detector.py</span>
+│   │   └── <span class="file">response_generator.py</span>
+│   ├── <span class="dir">rag/</span>
+│   │   ├── <span class="file">knowledge_base.py</span>
+│   │   └── <span class="file">template_store.py</span>
+│   └── <span class="dir">models/</span>
+│       └── <span class="file">schemas.py</span>
+├── <span class="dir">tests/</span>           <span class="comment">← 161 tests</span>
+├── <span class="file">Dockerfile</span>
+├── <span class="file">docker-compose.yml</span>
+└── <span class="dir">.github/workflows/</span>
+    └── <span class="file">ci-cd.yml</span></pre>
+          </div>
+          <div class="repo-features">
+            <h4><span class="i18n" data-en="Key Features" data-kr="핵심 기능">Key Features</span></h4>
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-icon">🎯</span>
+                <span class="feature-text"><span class="i18n"
+                  data-en="7 categories &times; 32 sub-intents classification<small>90% template + 10% AI natural language glue</small>"
+                  data-kr="7개 카테고리 &times; 32개 하위 의도 분류<small>90% 템플릿 + 10% AI 자연어 글루</small>">7 categories &times; 32 sub-intents classification<small>90% template + 10% AI natural language glue</small></span></span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">🛡️</span>
+                <span class="feature-text"><span class="i18n"
+                  data-en="9 Red Flag fraud scoring (0~100)<small>Minna/Ethoca third-party auto-block (Step 0.5)</small>"
+                  data-kr="9개 Red Flag 지표 Fraud 스코어링 (0~100)<small>Minna/Ethoca 제3자 해지 자동 차단 (Step 0.5)</small>">9 Red Flag fraud scoring (0~100)<small>Minna/Ethoca third-party auto-block (Step 0.5)</small></span></span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">⚡</span>
+                <span class="feature-text"><span class="i18n"
+                  data-en="3-tier routing: L1 Escalation / L2 Draft / L3 Self-service<small>~630 tickets/month (38%) auto-resolved</small>"
+                  data-kr="3단계 라우팅: L1 에스컬레이션 / L2 초안 / L3 셀프서비스<small>월 ~630건(38%) 자동 처리</small>">3-tier routing: L1 Escalation / L2 Draft / L3 Self-service<small>~630 tickets/month (38%) auto-resolved</small></span></span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">🌍</span>
+                <span class="feature-text"><span class="i18n"
+                  data-en="10 languages, 30 multilingual templates<small>Quality scoring system (0.0~1.0)</small>"
+                  data-kr="10개 언어, 30개 다국어 템플릿<small>응답 품질 평가 시스템 (0.0~1.0)</small>">10 languages, 30 multilingual templates<small>Quality scoring system (0.0~1.0)</small></span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="repo-footer">
+          <span class="tech-tag"><span class="tech-dot" style="background:#3572A5;"></span>Python</span>
+          <span class="tech-tag">FastAPI</span>
+          <span class="tech-tag">Claude API</span>
+          <span class="tech-tag">ChromaDB</span>
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">Pydantic v2</span>
+          <span class="tech-tag">GitHub Actions</span>
+        </div>
+      </div>
+
+      <!-- ===== REPO 5: bizops-artifacts-portal ===== -->
+      <div class="repo-card reveal" data-accent="amber">
+        <div class="repo-header">
+          <div class="repo-icon">🗂️</div>
+          <div class="repo-meta">
+            <h3 class="repo-name">bizops-artifacts-portal</h3>
+            <p class="repo-desc"><span class="i18n"
+              data-en="Public documentation portal hosting 29 operational artifacts across 5 categories. CS manuals (EN/KO), chargeback dispute templates, AI chatbot planning docs, analysis reports, and weekly report archives."
+              data-kr="5개 카테고리 29개 운영 산출물 공개 포털. CS 운영 매뉴얼(EN/KO), 차지백 소명 템플릿, AI 챗봇 기획 문서, 분석 리포트, 주간 보고서 아카이브.">Public documentation portal hosting 29 operational artifacts across 5 categories. CS manuals (EN/KO), chargeback dispute templates, AI chatbot planning docs, analysis reports, and weekly report archives.</span></p>
+          </div>
+          <div class="repo-badges">
+            <span class="repo-pillar"><span class="i18n" data-en="OUTPUT" data-kr="산출물">OUTPUT</span></span>
+            <span class="repo-badge"><a href="https://tg-bizops.github.io/BizOPS/" target="_blank" style="color:inherit;">Live</a></span>
+            <span class="repo-badge">29 docs</span>
+          </div>
+        </div>
+        <div class="repo-body">
+          <div class="file-tree">
+            <div class="file-tree-header">
+              <span class="tree-dot r"></span><span class="tree-dot y"></span><span class="tree-dot g"></span>
+            </div>
+            <pre><span class="dir">bizops-artifacts-portal/</span>
+├── <span class="key">index.html</span>
+├── <span class="dir">cs-operations/</span>          <span class="comment">← 10 docs</span>
+│   ├── <span class="key">cs_manual_EN.html</span>
+│   ├── <span class="key">cs_manual_KO.html</span>
+│   ├── <span class="file">fraud_analysis.html</span>
+│   ├── <span class="file">cs_infographic.html</span>
+│   ├── <span class="file">cs_flow_diagram.html</span>
+│   └── <span class="dir">weekly-reports/</span>      <span class="comment">← W1~W4 archive</span>
+├── <span class="dir">chargeback/</span>              <span class="comment">← 3 docs</span>
+│   ├── <span class="key">operation_manual.html</span>
+│   ├── <span class="file">template.xlsx</span>
+│   └── <span class="file">flow_diagram.html</span>
+├── <span class="dir">ai-chatbot/</span>              <span class="comment">← 13 docs</span>
+│   ├── <span class="file">architecture.html</span>
+│   ├── <span class="file">one_pager.html</span>
+│   ├── <span class="file">operation_guide.html</span>
+│   └── <span class="file">training_materials.html</span>
+├── <span class="dir">ip-protection/</span>           <span class="comment">← 1 doc</span>
+│   └── <span class="file">ip_manual.html</span>
+└── <span class="dir">dashboards/</span>              <span class="comment">← 2 docs</span>
+    ├── <span class="file">ticket_dashboard.html</span>
+    └── <span class="file">dashboard_manual.html</span></pre>
+          </div>
+          <div class="repo-features">
+            <h4><span class="i18n" data-en="Categories" data-kr="카테고리">Categories</span></h4>
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-icon">📞</span>
+                <span class="feature-text"><span class="i18n"
+                  data-en="CS Operations (10 docs)<small>EN/KO manuals, fraud report, infographic, flow diagrams, weekly reports</small>"
+                  data-kr="CS 운영 (10개 문서)<small>EN/KO 매뉴얼, Fraud 리포트, 인포그래픽, 플로우 다이어그램, 주간 보고서</small>">CS Operations (10 docs)<small>EN/KO manuals, fraud report, infographic, flow diagrams, weekly reports</small></span></span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">💬</span>
+                <span class="feature-text"><span class="i18n"
+                  data-en="AI Chatbot Planning (13 docs)<small>Architecture, roadmap, demo scenario, training materials, operation manual</small>"
+                  data-kr="AI 챗봇 기획 (13개 문서)<small>아키텍처, 로드맵, 시연 시나리오, 교육 자료, 운영 매뉴얼</small>">AI Chatbot Planning (13 docs)<small>Architecture, roadmap, demo scenario, training materials, operation manual</small></span></span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">💳</span>
+                <span class="feature-text"><span class="i18n"
+                  data-en="Chargeback (3 docs)<small>8 PG dispute manual + evidence form V5 + evidence template v2</small>"
+                  data-kr="차지백 (3개 문서)<small>8개 PG사 소명 매뉴얼 + 증빙 폼 V5 + 증빙 템플릿 v2</small>">Chargeback (3 docs)<small>8 PG dispute manual + evidence form V5 + evidence template v2</small></span></span>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon">📊</span>
+                <span class="feature-text"><span class="i18n"
+                  data-en="Dashboards &amp; IP Protection (3 docs)<small>Ticket dashboard, dashboard manual, IP protection manual</small>"
+                  data-kr="대시보드 &amp; IP 보호 (3개 문서)<small>티켓 대시보드, 대시보드 매뉴얼, IP 보호 매뉴얼</small>">Dashboards &amp; IP Protection (3 docs)<small>Ticket dashboard, dashboard manual, IP protection manual</small></span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="repo-footer">
+          <span class="tech-tag">GitHub Pages</span>
+          <span class="tech-tag">HTML/CSS</span>
+          <span class="tech-tag">GitHub Actions</span>
+          <span class="tech-tag">Claude AI</span>
+          <span class="tech-tag">@media print</span>
+          <span class="tech-tag">Confluence</span>
         </div>
       </div>
 

@@ -203,4 +203,26 @@
     });
   }
 
+  // ===== Screenshot Lightbox =====
+  var lightbox = document.createElement('div');
+  lightbox.className = 'lightbox';
+  lightbox.innerHTML = '<img src="" alt="Screenshot">';
+  document.body.appendChild(lightbox);
+
+  window.openLightbox = function (el) {
+    var img = el.querySelector('img');
+    if (img) {
+      lightbox.querySelector('img').src = img.src;
+      lightbox.classList.add('active');
+    }
+  };
+
+  lightbox.addEventListener('click', function () {
+    lightbox.classList.remove('active');
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') lightbox.classList.remove('active');
+  });
+
 })();

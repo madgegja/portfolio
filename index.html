@@ -66,7 +66,7 @@
     <div class="hero-stats">
       <div class="hero-stat"><span class="num">12+</span><span class="lbl"><span class="i18n" data-en="Years" data-kr="년 경력">Years</span></span></div>
       <div class="hero-stat"><span class="num">10</span><span class="lbl"><span class="i18n" data-en="Markets" data-kr="마켓">Markets</span></span></div>
-      <div class="hero-stat"><span class="num">7</span><span class="lbl"><span class="i18n" data-en="Projects" data-kr="프로젝트">Projects</span></span></div>
+      <div class="hero-stat"><span class="num">8</span><span class="lbl"><span class="i18n" data-en="Projects" data-kr="프로젝트">Projects</span></span></div>
       <div class="hero-stat"><span class="num">13K+</span><span class="lbl"><span class="i18n" data-en="Tickets Analyzed" data-kr="티켓 분석">Tickets Analyzed</span></span></div>
     </div>
     <div class="hero-cta">
@@ -86,15 +86,64 @@
     </div>
     <div class="projects-stack">
 
-<!-- ========== 1. CS AI CHATBOT ========== -->
+<!-- ========== 1. CS AI DASHBOARD ========== -->
+<div class="project-card reveal">
+  <div class="card-header">
+    <div class="card-icon" style="background:linear-gradient(135deg,#ede9fe,#c4b5fd);">🖥️</div>
+    <div style="flex:1"><div class="card-title-row"><span class="card-title">cs-ai-dashboard</span>
+      <div class="card-badges"><span class="badge badge-purple">AI</span><span class="badge badge-green">Production</span><span class="badge badge-lang"><span class="dot" style="background:#3572A5"></span> Python</span><span class="badge badge-outline">FastAPI</span><span class="badge badge-outline"><a href="https://cs-dashboard.duckdns.org" target="_blank" style="color:inherit;">Live</a></span></div>
+    </div></div>
+  </div>
+  <p class="card-desc"><span class="i18n" data-en="Production AI-powered CS operations dashboard. FastAPI + Vanilla JS SPA integrated with Zendesk API. AI draft generation with Claude SDK, 8-market multilingual RAG, 11-pattern spam detection, 6-dimension quality scoring. Currently serving 10 global markets." data-kr="운영 중인 AI CS 대시보드. FastAPI + 바닐라 JS SPA, Zendesk API 연동. Claude SDK 기반 AI 초안 생성, 8개 마켓 다국어 RAG, 11패턴 스팸 감지, 6차원 품질 스코어링. 현재 10개 글로벌 마켓 서비스 중.">Production AI-powered CS operations dashboard. FastAPI + Vanilla JS SPA integrated with Zendesk API. AI draft generation with Claude SDK, 8-market multilingual RAG, 11-pattern spam detection, 6-dimension quality scoring. Currently serving 10 global markets.</span></p>
+  <div class="card-body">
+    <div class="terminal"><div class="terminal-bar"><span class="terminal-dot r"></span><span class="terminal-dot y"></span><span class="terminal-dot g"></span></div>
+      <div class="terminal-body"><span class="folder">toomics-ai-agent/dashboard/</span><br>├── <span class="file-g">main.py</span> <span class="dim">← FastAPI app</span><br>├── <span class="folder">routers/</span><br>│   ├── <span class="file-y">tickets.py</span><br>│   ├── <span class="file-y">actions.py</span><br>│   ├── <span class="file-y">drafts.py</span><br>│   └── <span class="file-y">auth.py</span><br>├── <span class="folder">services/</span><br>│   ├── <span class="file-g">zendesk_client.py</span><br>│   ├── <span class="file-c">draft_generator.py</span><br>│   ├── <span class="file-c">claude_service.py</span><br>│   ├── <span class="file-p">rag_service.py</span><br>│   ├── <span class="file-r">spam_detector.py</span><br>│   ├── <span class="file-r">category_classifier.py</span><br>│   ├── <span class="file-g">language_detector.py</span><br>│   └── <span class="file-y">quality_scorer.py</span><br>├── <span class="folder">knowledge/</span> <span class="dim">← 9 lang RAG</span><br>├── <span class="folder">static/</span> <span class="dim">← SPA (JS+CSS)</span><br>└── <span class="folder">tests/</span> <span class="dim">← 503 tests</span></div>
+    </div>
+    <div class="features-section">
+      <div class="features-label"><span class="i18n" data-en="Key Features" data-kr="핵심 기능">Key Features</span></div>
+      <div class="feature-card"><div class="feature-icon" style="background:#ede9fe;">🤖</div><div><div class="feature-title"><span class="i18n" data-en="AI Draft Generation" data-kr="AI 초안 생성">AI Draft Generation</span></div><div class="feature-sub"><span class="i18n" data-en="95/5 rule — 95% source-based + 5% format only. Claude SDK/Proxy dual mode" data-kr="95/5 규칙 — 95% 소스 기반 + 5% 포맷만. Claude SDK/프록시 이중 모드">95/5 rule — 95% source-based + 5% format only. Claude SDK/Proxy dual mode</span></div></div></div>
+      <div class="feature-card"><div class="feature-icon" style="background:#cffafe;">🌍</div><div><div class="feature-title"><span class="i18n" data-en="8-Market Multilingual RAG" data-kr="8개 마켓 다국어 RAG">8-Market Multilingual RAG</span></div><div class="feature-sub"><span class="i18n" data-en="EN + FR/DE/ES/JP/PT/TH/CN/IT keyword-based section routing, EN fallback" data-kr="EN + FR/DE/ES/JP/PT/TH/CN/IT 키워드 기반 섹션 라우팅, EN 폴백">EN + FR/DE/ES/JP/PT/TH/CN/IT keyword-based section routing, EN fallback</span></div></div></div>
+      <div class="feature-card"><div class="feature-icon" style="background:#fef2f2;">🛡️</div><div><div class="feature-title"><span class="i18n" data-en="Spam Detection P1~P11" data-kr="스팸 감지 P1~P11">Spam Detection P1~P11</span></div><div class="feature-sub"><span class="i18n" data-en="Phishing, legal impersonation, social media scam, security/sales spam" data-kr="피싱, 법률 사칭, 소셜미디어 사기, 보안/영업 스팸">Phishing, legal impersonation, social media scam, security/sales spam</span></div></div></div>
+      <div class="feature-card"><div class="feature-icon" style="background:#d1fae5;">📊</div><div><div class="feature-title"><span class="i18n" data-en="4-Stage Category Pipeline" data-kr="4단계 카테고리 파이프라인">4-Stage Category Pipeline</span></div><div class="feature-sub"><span class="i18n" data-en="Intent → Content Scoring → Consensus → Post-correction (B2B detect)" data-kr="Intent 분석 → Content 스코어링 → Consensus → 후보정 (B2B 감지)">Intent → Content Scoring → Consensus → Post-correction (B2B detect)</span></div></div></div>
+    </div>
+  </div>
+  <div class="tag-row"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Claude API</span><span class="tag">Zendesk API</span><span class="tag">RAG</span><span class="tag">JWT</span><span class="tag">Vanilla JS</span><span class="tag">SPA</span></div>
+  <div class="psr-section">
+    <div class="psr-grid">
+      <div class="psr-card problem"><div class="psr-label">🔴 PROBLEM</div>
+        <div class="psr-item"><span class="i18n" data-en="<strong>1,600+ monthly tickets</strong> manually handled across 10 markets, 10 languages" data-kr="10개 마켓 10개 언어 <strong>월 1,600건 이상</strong> 수작업 처리"><strong>1,600+ monthly tickets</strong> manually handled across 10 markets, 10 languages</span></div>
+        <div class="psr-item"><span class="i18n" data-en="No AI assistance — agents write every response from scratch" data-kr="AI 지원 없음 — 상담원이 모든 응답을 처음부터 직접 작성">No AI assistance — agents write every response from scratch</span></div>
+      </div>
+      <div class="psr-card strategy"><div class="psr-label">🟠 STRATEGY</div>
+        <div class="psr-item"><span class="i18n" data-en="Built <strong>production AI dashboard</strong> — agents review AI drafts, not write from zero" data-kr="<strong>운영 AI 대시보드</strong> 구축 — 상담원이 AI 초안을 검토, 처음부터 작성 불필요">Built <strong>production AI dashboard</strong> — agents review AI drafts, not write from zero</span></div>
+        <div class="psr-item"><span class="i18n" data-en="Invisible AI: customers never know AI exists. Zendesk UX unchanged" data-kr="투명 AI: 고객은 AI 존재를 모름. Zendesk UX 변화 없음">Invisible AI: customers never know AI exists. Zendesk UX unchanged</span></div>
+        <div class="psr-item"><span class="i18n" data-en="Phase 1 (manual) → Phase 2 (L3 auto) → Phase 3 (expanded auto)" data-kr="Phase 1 (수동 확인) → Phase 2 (L3 자동) → Phase 3 (확대 자동화)">Phase 1 (manual) → Phase 2 (L3 auto) → Phase 3 (expanded auto)</span></div>
+      </div>
+      <div class="psr-card result"><div class="psr-label">🟢 RESULT</div>
+        <div class="psr-item"><span class="i18n" data-en="<strong>Phase 1 live in production</strong> — 503 tests, 10 markets operational" data-kr="<strong>Phase 1 운영 중</strong> — 503개 테스트, 10개 마켓 서비스"><strong>Phase 1 live in production</strong> — 503 tests, 10 markets operational</span></div>
+        <div class="psr-item"><span class="i18n" data-en="6-dimension quality scoring (Template/Safety/Action/Relevance/Complete/Length)" data-kr="6차원 품질 스코어링 (템플릿/안전성/실행성/관련성/완성도/길이)">6-dimension quality scoring (Template/Safety/Action/Relevance/Complete/Length)</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="screenshot-gallery">
+    <div class="screenshot-label"><span class="i18n" data-en="Live Dashboard Screenshots" data-kr="실제 대시보드 스크린샷">Live Dashboard Screenshots</span></div>
+    <div class="screenshot-grid">
+      <div class="screenshot-item" onclick="openLightbox(this)"><img src="assets/screenshots/dashboard_overview.png" alt="Dashboard Overview" loading="lazy"><div class="screenshot-caption"><span class="i18n" data-en="Dashboard — Ticket List + KPI Cards + Charts" data-kr="대시보드 — 티켓 목록 + KPI 카드 + 차트">Dashboard — Ticket List + KPI Cards + Charts</span></div></div>
+      <div class="screenshot-item" onclick="openLightbox(this)"><img src="assets/screenshots/dashboard_detail.png" alt="Ticket Detail + AI Draft" loading="lazy"><div class="screenshot-caption"><span class="i18n" data-en="Ticket Detail — AI Draft + Quality Score + Actions" data-kr="티켓 상세 — AI 초안 + 품질 점수 + 액션">Ticket Detail — AI Draft + Quality Score + Actions</span></div></div>
+      <div class="screenshot-item" onclick="openLightbox(this)"><img src="assets/screenshots/dashboard_profile.png" alt="Customer Profile Modal" loading="lazy"><div class="screenshot-caption"><span class="i18n" data-en="Customer Profile — User Info + Zendesk Link" data-kr="고객 프로필 — 사용자 정보 + Zendesk 링크">Customer Profile — User Info + Zendesk Link</span></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== 2. CS AI CHATBOT (Archived) ========== -->
 <div class="project-card reveal">
   <div class="card-header">
     <div class="card-icon" style="background:linear-gradient(135deg,#cffafe,#a5f3fc);">💬</div>
     <div style="flex:1"><div class="card-title-row"><span class="card-title">cs-ai-chatbot</span>
-      <div class="card-badges"><span class="badge badge-cyan">AI</span><span class="badge badge-lang"><span class="dot" style="background:#3572A5"></span> Python</span><span class="badge badge-outline">FastAPI</span></div>
+      <div class="card-badges"><span class="badge badge-archived">Archived</span><span class="badge badge-cyan">AI</span><span class="badge badge-lang"><span class="dot" style="background:#3572A5"></span> Python</span><span class="badge badge-outline">FastAPI</span></div>
     </div></div>
   </div>
-  <p class="card-desc"><span class="i18n" data-en="AI-powered CS chatbot with Claude API + RAG. 10 markets, 10 languages, fraud detection, smart escalation. Targets 38% self-service automation from 11,621 real ticket analysis." data-kr="Claude API + RAG 기반 AI CS 챗봇. 10개 마켓, 10개 언어, Fraud 탐지, 스마트 에스컬레이션. 11,621건 실데이터 분석 기반 38% 셀프서비스 자동화 목표.">AI-powered CS chatbot with Claude API + RAG. 10 markets, 10 languages, fraud detection, smart escalation. Targets 38% self-service automation from 11,621 real ticket analysis.</span></p>
+  <p class="card-desc"><span class="i18n" data-en="AI-powered CS chatbot prototype — evolved into cs-ai-dashboard (above). Claude API + RAG, 10 markets, fraud detection, smart escalation. Prototyping role completed." data-kr="AI CS 챗봇 프로토타입 — cs-ai-dashboard(위 프로젝트)로 진화. Claude API + RAG, 10개 마켓, Fraud 탐지, 스마트 에스컬레이션. 프로토타입 역할 완료.">AI-powered CS chatbot prototype — evolved into cs-ai-dashboard (above). Claude API + RAG, 10 markets, fraud detection, smart escalation. Prototyping role completed.</span></p>
   <div class="card-body">
     <div class="terminal"><div class="terminal-bar"><span class="terminal-dot r"></span><span class="terminal-dot y"></span><span class="terminal-dot g"></span></div>
       <div class="terminal-body"><span class="folder">cs-ai-chatbot/</span><br>├── <span class="folder">app/</span><br>│   ├── <span class="file-g">main.py</span><br>│   ├── <span class="folder">routers/</span><br>│   │   ├── <span class="file-y">chat.py</span><br>│   │   ├── <span class="file-y">escalation.py</span><br>│   │   └── <span class="file-y">metrics.py</span><br>│   ├── <span class="folder">services/</span><br>│   │   ├── <span class="file-g">language_detector.py</span><br>│   │   ├── <span class="file-g">intent_classifier.py</span><br>│   │   ├── <span class="file-r">fraud_detector.py</span><br>│   │   └── <span class="file-c">response_generator.py</span><br>│   ├── <span class="folder">rag/</span><br>│   │   ├── <span class="file-p">knowledge_base.py</span><br>│   │   └── <span class="file-p">template_store.py</span><br>│   └── <span class="folder">models/</span><br>│       └── <span class="file-y">schemas.py</span><br>├── <span class="folder">tests/</span> <span class="dim">← 161 tests</span><br>├── <span class="file-c">Dockerfile</span><br>└── <span class="folder">.github/workflows/</span><br>&nbsp;&nbsp;&nbsp;&nbsp;└── <span class="file-c">ci-cd.yml</span></div>
@@ -155,15 +204,15 @@
   </div>
 </div>
 
-<!-- ========== 2. BIZOPS ARTIFACTS PORTAL ========== -->
+<!-- ========== 3. BIZOPS ARTIFACTS PORTAL ========== -->
 <div class="project-card reveal">
   <div class="card-header">
     <div class="card-icon" style="background:linear-gradient(135deg,#fef3c7,#fde68a);">🗂️</div>
     <div style="flex:1"><div class="card-title-row"><span class="card-title">bizops-artifacts-portal</span>
-      <div class="card-badges"><span class="badge badge-amber">OUTPUT</span><span class="badge badge-outline"><a href="https://tg-bizops.github.io/BizOPS/" target="_blank" style="color:inherit;">Live</a></span><span class="badge badge-outline">29 docs</span></div>
+      <div class="card-badges"><span class="badge badge-amber">OUTPUT</span><span class="badge badge-outline"><a href="https://tg-bizops.github.io/BizOPS/" target="_blank" style="color:inherit;">Live</a></span><span class="badge badge-outline">61 docs</span></div>
     </div></div>
   </div>
-  <p class="card-desc"><span class="i18n" data-en="Public documentation portal hosting 29 operational artifacts across 5 categories. CS manuals (EN/KO), chargeback templates, AI chatbot docs, analysis reports, and weekly archives." data-kr="5개 카테고리 29개 운영 산출물 공개 포털. CS 매뉴얼(EN/KO), 차지백 템플릿, AI 챗봇 문서, 분석 리포트, 주간 보고서 아카이브.">Public documentation portal hosting 29 operational artifacts across 5 categories. CS manuals (EN/KO), chargeback templates, AI chatbot docs, analysis reports, and weekly archives.</span></p>
+  <p class="card-desc"><span class="i18n" data-en="Public documentation portal hosting 61 operational artifacts across 9 categories. CS manuals (EN/KO), FAQ (10 languages), ToS (10 languages), chargeback templates, AI dashboard docs, analysis reports, and weekly archives." data-kr="9개 카테고리 61개 운영 산출물 공개 포털. CS 매뉴얼(EN/KO), FAQ(10개 언어), 이용약관(10개 언어), 차지백 템플릿, AI 대시보드 문서, 분석 리포트, 주간 보고서 아카이브.">Public documentation portal hosting 61 operational artifacts across 9 categories. CS manuals (EN/KO), FAQ (10 languages), ToS (10 languages), chargeback templates, AI dashboard docs, analysis reports, and weekly archives.</span></p>
   <div class="card-body">
     <div class="terminal"><div class="terminal-bar"><span class="terminal-dot r"></span><span class="terminal-dot y"></span><span class="terminal-dot g"></span></div>
       <div class="terminal-body"><span class="folder">bizops-artifacts-portal/</span><br>├── <span class="file-g">index.html</span><br>├── <span class="folder">cs-operations/</span> <span class="dim">← 10 docs</span><br>│   ├── <span class="file-g">cs_manual_EN.html</span><br>│   ├── <span class="file-g">cs_manual_KO.html</span><br>│   ├── <span class="file-y">fraud_analysis.html</span><br>│   ├── <span class="file-y">cs_infographic.html</span><br>│   ├── <span class="file-y">cs_flow_diagram.html</span><br>│   └── <span class="folder">weekly-reports/</span> <span class="dim">← W1~W4</span><br>├── <span class="folder">chargeback/</span> <span class="dim">← 3 docs</span><br>│   ├── <span class="file-r">operation_manual.html</span><br>│   ├── <span class="file-y">template.xlsx</span><br>│   └── <span class="file-y">flow_diagram.html</span><br>├── <span class="folder">ai-chatbot/</span> <span class="dim">← 13 docs</span><br>│   ├── <span class="file-c">architecture.html</span><br>│   ├── <span class="file-c">one_pager.html</span><br>│   └── <span class="file-c">operation_guide.html</span><br>├── <span class="folder">ip-protection/</span> <span class="dim">← 1 doc</span><br>│   └── <span class="file-p">ip_manual.html</span><br>└── <span class="folder">dashboards/</span> <span class="dim">← 2 docs</span><br>&nbsp;&nbsp;&nbsp;&nbsp;├── <span class="file-p">ticket_dashboard.html</span><br>&nbsp;&nbsp;&nbsp;&nbsp;└── <span class="file-p">dashboard_manual.html</span></div>
@@ -189,7 +238,7 @@
       </div>
       <div class="psr-card result"><div class="psr-label">🟢 RESULT</div>
         <div class="psr-item"><span class="i18n" data-en="<strong>29 documents</strong> publicly accessible — all authored solo" data-kr="<strong>29개 문서</strong> 공개 운영 — 모든 산출물 단독 기획·작성">
-          <strong>29 documents</strong> publicly accessible — all authored solo</span></div>
+          <strong>61 documents</strong> publicly accessible — all authored solo</span></div>
         <div class="psr-item"><span class="i18n" data-en="Single source of truth for 10 global markets with auto-deploy on push" data-kr="10개 글로벌 마켓의 단일 진실 소스, 푸시 시 자동 배포">Single source of truth for 10 global markets with auto-deploy on push</span></div>
       </div>
     </div>
@@ -202,9 +251,15 @@
     <div class="bar-row"><span class="bar-label">Dashboard</span><div class="bar-track"><div class="bar-fill" style="width:15%;background:linear-gradient(90deg,#8b5cf6,#a78bfa)"></div></div><span class="bar-value" style="color:#8b5cf6">2</span></div>
     <div class="bar-row"><span class="bar-label">IP Protection</span><div class="bar-track"><div class="bar-fill" style="width:8%;background:linear-gradient(90deg,#10b981,#34d399)"></div></div><span class="bar-value" style="color:#10b981">1</span></div>
   </div>
+  <div class="screenshot-gallery">
+    <div class="screenshot-label"><span class="i18n" data-en="Portal Screenshot" data-kr="포탈 스크린샷">Portal Screenshot</span></div>
+    <div class="screenshot-grid">
+      <div class="screenshot-item" onclick="openLightbox(this)"><img src="assets/screenshots/bizops_portal.png" alt="BizOPS Portal" loading="lazy"><div class="screenshot-caption"><span class="i18n" data-en="BizOPS Artifacts Portal — 61 docs, 9 categories" data-kr="BizOPS 산출물 포탈 — 61개 문서, 9개 카테고리">BizOPS Artifacts Portal — 61 docs, 9 categories</span></div></div>
+    </div>
+  </div>
 </div>
 
-<!-- ========== 3. BIZOPS AUTOMATION TOOLKIT ========== -->
+<!-- ========== 4. BIZOPS AUTOMATION TOOLKIT ========== -->
 <div class="project-card reveal">
   <div class="card-header">
     <div class="card-icon" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe);">🔧</div>
@@ -277,7 +332,7 @@
   </div>
 </div>
 
-<!-- ========== 4. GLOBAL CS ANALYTICS ========== -->
+<!-- ========== 5. GLOBAL CS ANALYTICS ========== -->
 <div class="project-card reveal">
   <div class="card-header">
     <div class="card-icon" style="background:linear-gradient(135deg,#d1fae5,#a7f3d0);">📈</div>
@@ -325,7 +380,7 @@
   </div>
 </div>
 
-<!-- ========== 5. PAYMENT OPS PLAYBOOK ========== -->
+<!-- ========== 6. PAYMENT OPS PLAYBOOK ========== -->
 <div class="project-card reveal">
   <div class="card-header">
     <div class="card-icon" style="background:linear-gradient(135deg,#ede9fe,#ddd6fe);">📖</div>
@@ -365,7 +420,7 @@
   </div>
 </div>
 
-<!-- ========== 6. AVATARA NFT PLATFORM ========== -->
+<!-- ========== 7. AVATARA NFT PLATFORM ========== -->
 <div class="project-card reveal">
   <div class="card-header">
     <div class="card-icon" style="background:linear-gradient(135deg,#ede9fe,#c4b5fd);">🎭</div>
@@ -444,7 +499,7 @@
   </div>
 </div>
 
-<!-- ========== 7. GLOBAL MASS REMITTANCE ========== -->
+<!-- ========== 8. GLOBAL MASS REMITTANCE ========== -->
 <div class="project-card reveal">
   <div class="card-header">
     <div class="card-icon" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe);">💱</div>

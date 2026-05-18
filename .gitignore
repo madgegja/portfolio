@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Backups
+*.bak
+*.bak[0-9]
+*.tmp
+
+# OMC session state
+.omc/
